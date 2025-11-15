@@ -1,0 +1,144 @@
+.open{
+    background-color: #62ad62 !important;
+} 
+
+.closed{
+    background-color: #9b5151 !important;
+}
+
+.base {
+    background-color: var(--secondaryBackground);
+}
+
+.warning {
+    margin: 10px 8px;
+}
+
+.date {
+    text-align: center;
+    width: 100%;
+    height: 3%;
+    min-height: 10px;
+}
+
+.noInvoiceDate {
+    text-align: center;
+}
+
+.buttonGroupTile {
+    text-align: center;
+    height: 60px;
+    width:50%;
+}
+
+.listWrapper {
+    height: 95%;
+}
+
+.invoiceItem {
+    min-height: 25px;
+    height: 10%;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--secondaryBackground);
+    box-shadow: inset 0 0 0 1px var(--primaryBackground);
+}
+
+.invoiceItemRow {
+    height: 100%;
+}
+
+.vcenter {
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.emptyInvoicesIcon {
+    font-size: 4em !important;
+    opacity: 0.3;
+}
+
+.invoiceItem:hover{
+    background-color: var(--primaryBackground);
+}
+
+.invoicePreview {
+    text-align: center;
+    background-color: var(--secondaryBackground);
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.header {
+    flex: 0 1 auto;
+}
+
+.invoiceSection {
+    padding: 12px 0;
+}
+
+.invoiceSeparator {
+    border-bottom: 1px solid var(--primaryTextColor);
+}
+
+.orders {
+    overflow: auto;
+    flex: 1 1 auto;
+    min-height: 150px;
+}
+
+.orderItem {
+    border-top: 1px solid #464646;
+    margin: 2px 0; 
+}
+
+.footer {
+    flex: 0 1 40px;
+}
+
+.bold{
+    font-weight: bolder;
+}
+
+.total {
+    font-size: 1.1em;
+}
+
+.textRight {
+    text-align: right;
+}
+
+.textLeft {
+    text-align: left;
+}
+
+:global div.react-calendar {
+    background-color: #636363 !important;
+    border: none;
+    width: 100%;
+    font-family:  "Metropolis",  sans-serif;
+    padding: 2px;
+    margin-bottom: 10px;
+    margin-top:  10px;
+}
+
+:global .react-calendar__tile[disabled] {
+    background-color: #444444 !important;
+}
+
+:global .react-calendar__navigation__arrow[disabled] {
+    background-color: #444444 !important;
+}
+
+:global .react-calendar__month-view__days__day--weekend {
+    color: #272727 !important;
+}
+
+:global .react-calendar__tile--active {
+    background-color: var(--ovviumYellow) !important;
+}
+

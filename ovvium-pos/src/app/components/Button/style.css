@@ -1,0 +1,14 @@
+.button {
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: var(--ovviumYellow);
+  text-align: center;
+  border: 0;
+  font-size: 16px;
+  margin: 4px 0px;
+  height: 40px;
+}
+
+.button:hover {
+  background-color: var(--orange);
+}

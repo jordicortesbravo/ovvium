@@ -1,0 +1,40 @@
+
+
+.wrapper {
+  background-color: var(--secondaryBackground);
+}
+
+.lightLayout {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
+
+.confirmWrapper {
+  height: 10%;
+  width: 100%;
+}
+
+.acceptTile {
+  width: 50%;
+  background-color: var(--green);
+  height: 100%;
+  text-align: center;
+}
+
+.cancelTile {
+  width: 50%;
+  background-color: var(--red);
+  height: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+
+  .ordersGrid {
+    display: none;
+  }
+
+}
+

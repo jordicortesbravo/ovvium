@@ -1,0 +1,31 @@
+.box {
+    text-align: center;
+    padding: 43px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 4px;
+    opacity: 0.95;
+}
+
+.accessTitle {
+    color: #000;
+    font-size: 20px;
+    display: block;
+    margin: 10px 0px;
+}
+
+.subtitle {
+    color: #000;
+    font-size: 14px;
+}
+
+.error {
+    color: var(--errorColor);
+}
+
+.back {
+    font-size:0.9em;
+    margin-top:20px;
+    color: var(--linkColor);
+    cursor: pointer;
+}

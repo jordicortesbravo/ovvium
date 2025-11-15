@@ -1,0 +1,86 @@
+.tile {
+  color: var(--primaryTextColor);
+  text-align: left;
+  border: 1px solid var(--secondaryBackground);
+  float: left;
+  width: 20%;
+  display: table;
+  font-size:14px;
+  background-color: var(--terciaryBackground);
+  border-radius: 6px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.tile_selected {
+  background-color: var(--ovviumYellow) !important;
+  color: white;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6);
+}
+
+.tile_disabled {
+  color: #949494;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.tile:active {
+  opacity: 0.8;
+}
+
+.tile_disabled:active {
+  opacity: 0.6 !important;
+  background-color: var(--terciaryBackground) !important;
+}
+
+.block {
+  width: 100%;
+}
+
+.tile > span {
+  display: table-cell;
+  vertical-align: middle;
+  margin: auto;
+  /* font-weight: 300; */
+}
+
+.tile > span {
+  display: table-cell;
+  vertical-align: middle;
+  margin: auto;
+  /* font-weight: 300; */
+}
+
+.tile > p {
+  /* font-weight: 400; */
+  display: table;
+  width: 100%;
+}
+
+.tile > p > span {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.small {
+  height: 80px;
+  min-width: auto;
+}
+
+.empty {
+  background-color: var(--primaryBackground);
+  border-left: 3px solid green;
+}
+
+.badge {
+  z-index: 3;
+  margin-top: -5px;
+  margin-left: -1px;
+  background-color: var(--red);
+  color: var(--primaryTextColor);
+  position: absolute;
+  padding-top: .4em;
+}

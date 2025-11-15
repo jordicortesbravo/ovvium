@@ -1,0 +1,94 @@
+
+.skeleton {
+  border: 2px solid var(--secondaryBackground);
+  position: relative;
+  min-height: 100px;
+  float: left;
+  min-width: 200px;
+  width: 20%;
+  display: block;
+  height: 280px;
+}
+
+.tile {
+  padding-left: 10px;
+  text-align: left;
+}
+
+.tile:active {
+  background-color: var(--ovviumYellow);
+  opacity: 1;
+}
+
+.productsWrapper{
+  width: 100%;
+}
+
+.searchInput {
+  background-color: var(--terciaryBackground);
+  width: 100%;
+}
+
+.searchInputInner {
+  height: 50px;
+  border-top: 2px solid var(--secondaryBackground);
+  border-left: 1px solid var(--secondaryBackground);
+  border-right: 4px solid var(--secondaryBackground);
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+
+  .tile {
+    background-color: var(--terciaryBackground);
+    width:20%;
+    height: 80px;
+  }
+
+  .searchInputInner {
+    border-right: 4px solid var(--secondaryBackground);
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .tile {
+    background-color: var(--terciaryBackground);
+    width:25%;
+    height: 80px;
+}
+
+  .searchInputInner {
+    border-right: 2px solid var(--secondaryBackground);
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .tile {
+    background-color: var(--terciaryBackground);
+    width:33.3%;
+    height: 80px;
+  }
+
+  .searchInputInner {
+    border-right: 1px solid var(--secondaryBackground);
+  }
+
+}
+
+@media screen and (max-width: 479px) {
+
+  .tile {
+    background-color: var(--terciaryBackground);
+    width: 50%;
+    height: 80px;
+  }
+
+  .searchInputInner {
+    border-right: 1px solid var(--secondaryBackground);
+  }
+}

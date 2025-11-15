@@ -1,0 +1,53 @@
+{
+  "name": "ovvium-pos-standalone",
+  "version": "1.0.0",
+  "description": "Ovvium's Point of Sale",
+  "main": "build/electron-starter.js",
+  "author": "Ovvium Tech SL",
+  "build": {
+    "appId": "com.ovvium.pos",
+    "productName": "Ovvium PoS",
+    "copyright": "Copyright © 2020 Ovvium Tech S.L.",
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "mac": {
+      "icon": "./assets/icon.png",
+      "category": "public.app-category.travel",
+      "target": "dmg"
+    },
+    "win": {
+      "icon": "./assets/icon.png",
+      "target": [
+        {
+          "target": "msi",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ]
+    }
+  },
+  "private": true,
+  "homepage": "https://pos.ovvium.com",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && electron --inspect=5858 .",
+    "pack": "npm run build && electron-builder build",
+    "pack-w": "npm run build && electron-builder -w"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "babel-loader": "^8.1.0",
+    "electron": "^8.3.0",
+    "electron-builder": "^22.6.1",
+    "electron-rebuild": "^1.11.0",
+    "typescript": "3.9.2"
+  },
+  "dependencies": {
+    "escpos": "^2.5.2",
+    "promise-socket": "^6.0.3"
+  }
+}

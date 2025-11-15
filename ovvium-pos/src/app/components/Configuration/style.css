@@ -1,0 +1,178 @@
+
+.navbar {
+    border-bottom: 1px solid #737373;
+    padding: 0;
+}
+
+.navbar a {
+    color: var(--primaryTextColor) !important;
+    font-size: 14px;
+    height: 50px;
+    padding-top: 15px;
+    min-width: 200px;
+    text-align: center;
+}
+
+.navbar a:hover {
+    color: var(--primaryTextColor);
+    background-color: var(--secondaryBackground);
+    opacity: 0.8;
+}
+
+.toggle{
+    color: var(--primaryTextColor);
+    margin: 6px;
+    background-color: var(--headerBackground);
+}
+
+.selected {
+    color: var(--ovviumYellow);
+    border-bottom: 2px solid var(--ovviumYellow);
+}
+
+.selected:hover {
+    color: var(--ovviumYellow);
+    opacity: 0.8;
+}
+
+.printCol {
+    border: 4px solid var(--secondaryBackground);
+}
+
+.tile {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.printerTile {
+    height: 60px;
+    text-align: center;
+    margin: 5px;
+}
+
+.tile:active {
+    background-color: var(--ovviumYellow);
+}
+
+.emptyPrintsMessage {
+    color: var(--primaryTextColor);
+    margin-top: 20px;
+}
+
+.buttonGroupTile {
+    text-align: center;
+    height: 40px;
+    width:25%;
+    margin-right: 5px;
+}
+
+input.config {
+    text-align: left;
+    width: 70%;
+    height: 60px;
+    padding-left: 20px;
+    color: var(--ovviumYellow);
+    background-color: var(--primaryBackground);
+    border: 2px solid var(--secondaryBackground);
+    margin-top: 10px;
+}
+
+.spaceVertical10 {
+    margin-top: 10px;
+}
+
+.form {
+    padding: 1%;
+}
+
+
+.buttonsContainer {
+    height: 11%;
+}
+
+.formContainer {
+    height: 88%;
+}
+
+.removeButtonContainer {
+    height: 11%;
+}
+.smallPrintButtonsContainer {
+    display: none;
+}
+
+.mainWrapper {
+    height: calc(100% - 55px);
+}
+
+@media screen and (max-width: 575px) {
+
+    .tile {
+        width: 25%;
+    }
+
+    .acceptButton, .cancelButton {
+        width: 50%;
+    }
+    .smallPrintButtonsContainer {
+        display: block;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .printButtonsContainer, .removeButtonContainer {
+        display: none;
+    }
+
+    input.config {
+        width: 97%;
+    }
+
+    .buttonGroupTile {
+        width: 48%;
+    }
+
+    .formContainer {
+        height: 86%;
+        margin-left: -10px;
+        margin-right: -25px;
+    }
+
+    .buttonsContainer {
+        height: 12%;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .mainWrapper {
+        height: calc(100% - 115px);
+    }
+  }
+
+  .avatar{
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      padding: 0px;
+      z-index: 999;
+  }
+  
+.avatar a::after {
+    display:none;
+}
+
+.avatar div {
+  background-color: var(--secondaryBackground);
+}
+
+.avatar a {
+    color: var(--ovviumYellow);
+    padding-top: 4px;
+}
+
+.customerName {
+    margin-right: 60px;
+    padding-top: 10px;
+}

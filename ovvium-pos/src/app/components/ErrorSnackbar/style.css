@@ -1,0 +1,14 @@
+.header {
+    background-color: var(--ovviumYellow);
+    text-align: center;
+    width:100%;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    width: 135px;
+    -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
+}

@@ -1,0 +1,31 @@
+
+.tabBar {
+    background-color: var(--primaryBackground);
+    width: 100%;
+    margin: 0;
+    border-top: 1px solid #737373;
+}
+
+.tab {
+    color: var(--primaryTextColor);
+    text-align: center;
+    cursor: pointer;
+    padding-top: 8px;
+    z-index: 2;
+    height: 100%;
+}
+
+.selected {
+    color: var(--ovviumYellow);
+    background-color: var(--secondaryBackground);
+   
+}
+
+.tabTitle {
+    font-size:10px;
+}
+
+.tab:hover {
+    opacity: 0.8;
+    background-color: var(--secondaryBackground);
+}

@@ -1,0 +1,156 @@
+
+
+.mainLayout {
+  height: 77%;
+  overflow-y: auto;
+  display: block;
+}
+
+.mainLayoutNoOptionsMultiline {
+  height: 88%;
+  overflow-y: auto;
+  display: block;
+}
+
+.mainLayoutNoMultilineEditableOrder {
+  height: 88%;
+  overflow-y: auto;
+  display: block;
+}
+
+.optionsLayout {
+  height: 21.5%;
+  width: 100%;
+}
+
+.optionsLayoutNoMultilineEditableOrder {
+  height: 12%;
+  width: 100%;
+  border: 2px solid var(--secondaryBackground);
+}
+
+.acceptTile {
+  width: 50%;
+  background-color: var(--green);
+  height: 100%;
+  text-align: center;
+}
+
+.cancelTile {
+  width: 50%;
+  background-color: var(--red);
+  height: 100%;
+  text-align: center;
+}
+
+.cancelTileSelectableOrders {
+  width: 50%;
+  background-color: var(--red);
+  height: 50%;
+  text-align: center;
+}
+
+.acceptTileSelectableOrders {
+  width: 50%;
+  background-color: var(--green);
+  height: 50%;
+  text-align: center;
+}
+
+.issueStatusTile {
+  width: 33.3%;
+  height: 50%;
+  text-align: center;
+}
+
+.wrapper {
+  background-color: var(--secondaryBackground);
+}
+
+.lightLayout {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.shortCurrentLocation {
+  color: var(--primaryTextColor);
+  text-align: center;
+  font-size: 14px;
+  padding-left: 43%;
+  height: 30px;
+  padding-top: 5px;
+}
+
+.shortCurrentLocationJoinedTables {
+  color: var(--primaryTextColor);
+  text-align: center;
+  font-size: 14px;
+  padding-left: 10%;
+  height: 30px;
+  padding-top: 5px;
+}
+
+.shortCurrentLocation:active {
+  opacity: 0.8;
+}
+
+.pendingLocationButton {
+  background-color: var(--red)
+}
+
+.fineLocationButton {
+  background-color: var(--green)
+}
+
+.tile {
+  height: 50%;
+  text-align: center;
+}
+
+.tileNoMultiline {
+  height: 100%;
+  text-align: center;
+}
+
+.tileOptionsFirstRow {
+  width: 50%
+}
+
+.tileOptionsSecondRow {
+  width: 33.3%
+}
+
+.tileOptionsSecondRow:active {
+  background-color: var(--ovviumYellow);
+  opacity: 1;
+}
+
+@media screen and (max-width: 992px) {
+
+  .ordersGrid {
+    display: none;
+  }
+
+  .mainLayout {
+    height: calc(77% - 30px);
+  }
+
+  .mainLayoutNoOptionsMultiline {
+    height: 85%;
+  }
+
+  .tileOptionsFirstRow {
+    font-size: 12px;
+  }
+
+  .optionsLayoutNoMultiline {
+    height:9%;
+  }
+
+  .tile {
+    height: 100%;
+  }
+
+
+}
+

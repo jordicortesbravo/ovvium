@@ -1,0 +1,71 @@
+.container {
+    background-color: var(--primaryBackground);
+}
+
+.locationsContainer {
+    height:88%;
+    overflow-y: auto;
+    background-color: var(--secondaryBackground);
+}
+
+.withConfirmButtons {
+    height:77% !important;
+}
+
+.buttonsContainer {
+    height: 11%;
+}
+
+.tile {
+    background-color: var(--terciaryBackground);
+    height: 100%;
+    text-align: center;
+}
+
+.billButton {
+    width: 23%;
+    margin: 0 2px;
+}
+
+.joinTableButton {
+    width: 15%
+}
+
+.uniqueButton {
+   margin-left: 10px
+}
+
+@media screen and (max-width: 992px) {
+    .joinTableButton {
+        width: 21%;
+    }
+
+    .billButton {
+        width: 23%
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .tile {
+      font-size:11px;
+      height: 48px;
+    }
+  
+    .buttonsContainer {
+        height: 8%
+    }
+
+    .locationsContainer {
+        height:91%;
+    }
+
+    .billButton {
+        width: 22%
+    }
+
+    .joinTableButton {
+        display: none;
+    }
+
+  }

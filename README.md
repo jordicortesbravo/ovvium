@@ -263,6 +263,24 @@ Key architectural decisions from 2018-2020:
 - [Payment Processing](ovvium-backend/src/main/java/com/ovvium/services/model/payment/PaymentOrder.java) - Financial transactions
 - [API Controllers](ovvium-backend/src/main/java/com/ovvium/services/web/controller/bff/v1/) - REST API endpoints
 
+## 🖥️ POS System Source Code
+**[🔗 View POS Source Code](ovvium-pos/src/app/)**
+
+Electron-based Point of Sale system with:
+- **React + TypeScript** desktop application architecture
+- **Real-time kitchen management** with order status tracking and timing
+- **Hardware integration** for thermal printers and cash drawers
+- **Complex bill splitting** and payment processing workflows
+- **Multi-location support** for restaurant chains and franchises
+- **Material-UI + Bootstrap** professional interface design
+- **Redux state management** with persistence for offline capability
+
+**Key components:**
+- [Kitchen Management](ovvium-pos/src/app/components/Kitchen/KitchenView.tsx) - Real-time order processing and status tracking
+- [Bill Processing](ovvium-pos/src/app/components/Bill/BillView.tsx) - Payment flows and bill splitting logic
+- [App Architecture](ovvium-pos/src/app/App.tsx) - Route management and authentication flows
+- [Redux Configuration](ovvium-pos/src/app/config/ReduxConfig.ts) - State management setup
+
 > **Note:** This code represents my architectural thinking from 5-7 years ago. My current approach incorporates modern Spring Boot features, reactive programming patterns, and improved testing strategies while maintaining the same focus on clean architecture and business domain modeling.
 
 > **Security Note:** Configuration files, build scripts, environment variables, API keys, and deployment configurations have been omitted from this repository for security and simplification purposes. The core application logic and architecture are fully represented.

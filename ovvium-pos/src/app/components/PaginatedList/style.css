@@ -1,0 +1,52 @@
+.list {
+    height: 90%;
+    overflow: auto;
+    text-align: center;
+}
+
+.arrowContainer {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondaryBackground);
+}
+
+.arrow {
+    background-color: var(--terciaryBackground);
+    width: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.arrow span {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: inline-block;
+}
+
+.disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
+}
+
+.vcenter {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.itemContainer {
+    height: inherit;
+}
+
+.emptyIcon {
+    font-size: 4em !important;
+    opacity: 0.3;
+}

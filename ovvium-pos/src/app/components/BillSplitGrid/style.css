@@ -1,0 +1,10 @@
+.tile {
+    padding-left: 10px;
+    height: 80px;
+    text-align: center;
+}
+  
+.tile:active {
+    background-color: var(--ovviumYellow);
+    opacity: 1;
+}

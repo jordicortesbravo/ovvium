@@ -1,0 +1,59 @@
+
+
+.optionsWrapper {
+  height: 77%;
+  overflow-y: auto;
+}
+
+.categoriesWrapper {
+  height: 21.5%;
+  width: 100%;
+}
+
+.wrapper {
+  background-color: var(--secondaryBackground);
+}
+
+.lightLayout {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.shortCurrentLocation {
+  color: var(--primaryTextColor);
+  text-align: center;
+  font-size: 14px;
+  padding-left: 43%;
+  height: 30px;
+  padding-top: 5px;
+}
+
+.shortCurrentLocationJoinedTables {
+  color: var(--primaryTextColor);
+  text-align: center;
+  font-size: 14px;
+  padding-left: 10%;
+  height: 30px;
+  padding-top: 5px;
+}
+
+.shortCurrentLocation:active {
+  opacity: 0.8;
+}
+
+.pendingLocationButton {
+  background-color: var(--red)
+}
+
+.fineLocationButton {
+  background-color: var(--green)
+}
+
+@media screen and (max-width: 992px) {
+
+  .ordersGrid {
+    display: none;
+  }
+
+}
+

@@ -1,0 +1,13 @@
+.acceptTile {
+  width: 50%;
+  background-color: var(--green);
+  height: 100%;
+  text-align: center;
+}
+
+.cancelTile {
+  width: 50%;
+  background-color: var(--red);
+  height: 100%;
+  text-align: center;
+}

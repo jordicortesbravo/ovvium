@@ -1,0 +1,62 @@
+.optionsWrapper {
+  height:89%;
+  overflow-y: auto;
+}
+
+.wrapper {
+  background-color: var(--secondaryBackground);
+}
+
+.serviceTime {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background-color: var(--secondaryBackground);
+}
+
+.productName {
+  width: calc(100% - 60px);
+  height: 60px;
+  text-align: center;
+  padding: 5px;
+}
+
+.productCheckbox {
+  height: 60px;
+  width: 60px; 
+  text-align: center;
+  font-size: 30px
+}
+
+
+input.comments {
+  text-align: left;
+  width: 100%;
+  height: 80px;
+  padding-left: 20px;
+  color: var(--ovviumYellow);
+  background-color: var(--primaryBackground);
+  border: 2px solid var(--secondaryBackground);
+  border-radius: 6px;
+}
+
+input.comments:focus {
+  border-color: var(--secondaryBackground);
+}
+
+.commentWrapper {
+  padding: 4px;
+}
+
+.comments::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #a5a5a5;
+  opacity: 1; /* Firefox */
+}
+
+.comments:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #a5a5a5;
+}
+
+.comments::-ms-input-placeholder { /* Microsoft Edge */
+  color: #a5a5a5;
+}

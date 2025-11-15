@@ -1,0 +1,11 @@
+.kb-icon-container {
+    width: 160px;
+    height: 40px;
+    border: solid 1px #a3a3a3;
+    text-align: center;
+    vertical-align: middle;
+    padding: 6px;
+    background-color: var(--secondaryBackground);
+    color: var(--primaryTextColor);
+    cursor: pointer;
+}

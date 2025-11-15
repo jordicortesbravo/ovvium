@@ -1,0 +1,147 @@
+
+.tableButton {
+  width: '100%';
+  text-align: 'center';
+  height: '80px';
+  background-color: var(--terciaryBackground);
+  border-bottom: 1px solid var(--primaryBackground);
+}
+
+.productsWrapper{
+  width: 100%;
+}
+
+.chargeButton {
+  font-size: 30px;
+  text-align: center;
+  height: 75px;
+  margin-left: 4px;
+  padding: 5px;
+  background-color: var(--blue);
+  width: calc(100% - 7px) !important;
+} 
+
+.chargeButtonChargeText {
+  position: absolute;
+  left: 25px;
+  margin-top: 23px !important;
+  font-size: 14px;
+}
+
+.chargeButtonNoColor {
+  font-size: 30px;
+  text-align: center;
+  height: 75px;
+  margin-left: 4px;
+  padding: 5px;
+  width: calc(100% - 7px) !important;
+} 
+
+.chargeButtonRegular {
+  height: 75px;
+  width: 33%;
+  text-align: center;
+}
+
+.chargeButtonRegularX2 {
+  width: 66%;
+  font-size: 18px;
+}
+
+.chargeButtonRegular:active {
+  background-color: var(--ovviumYellow);
+}
+
+.firstchargeButtonRegular {
+  border-left: 5px solid var(--secondaryBackground)
+}
+
+.chargeButtonCancel:active {
+  background-color:var(--red);
+  opacity: 0.8;
+}
+
+.chargeButtonCancel {
+  background-color: var(--red);
+}
+
+.chargeButtonOk {
+  background-color: var(--green);
+}
+
+.chargeButtonOk:active {
+  background-color: var(--green);
+  opacity: 0.8;
+}
+
+.ordersGridContainer {
+  height: calc(100% - 200px);
+}
+
+.ordersContainer {
+  height: 100%;
+  padding: 5px;
+}
+
+.ordersGridTitle {
+  margin-bottom: 7px;
+  color: var(--ovviumYellow)
+}
+
+.orderResumeDetail {
+  text-align: right;
+  padding-right: 0;
+}
+
+.orderResumeDetailPrice {
+  padding-right: 10px;
+}
+
+.orderResumeRow {
+  margin-bottom: 2px;
+}
+
+.innerOrdersContainer {
+  height: 100%;
+  overflow-y: auto;
+  background-color: var(--primaryBackground);
+  padding: 5px;
+  color: var(--primaryTextColor);
+  font-size: 14px;
+  width: 100%;
+}
+
+.locationButton {
+  text-align: center;
+  height: 80px;
+  background-color: var(--terciaryBackground);
+  border-bottom: 1px solid var(--primaryBackground);
+  font-size: 20px;
+}
+
+.fineLocationButton {
+  background-color: var(--green)
+}
+
+.fineLocationButton:active {
+  opacity: 0.8;
+    background-color: var(--green);
+}
+
+.pendingLocationButton {
+  background-color: var(--red)
+}
+
+.orderPaymentStatusFilterButton {
+  text-align: center;
+  height: 40px;
+  width:33.3%;
+}
+
+.joinedLocations {
+  font-size: 14px
+}
+
+.invoiceDate {
+  height: 25px;
+}

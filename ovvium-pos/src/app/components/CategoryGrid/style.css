@@ -1,0 +1,22 @@
+.categoryWrapper{
+  width: 100%;
+  overflow: auto;
+}
+
+.tile {
+  height: 50%;
+  text-align: center;
+  padding-left: 0px;
+}
+
+.tile_selected{
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 479px) {
+
+  .tile {
+    font-size:11px;
+  }
+
+}

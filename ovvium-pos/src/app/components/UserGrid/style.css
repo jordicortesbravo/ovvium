@@ -1,0 +1,9 @@
+.userWrapper{
+    width: 100%;
+}
+
+.tile {
+    widows: 20%;
+    height: 80px;
+    text-align: center;
+}

@@ -1,0 +1,110 @@
+.tile {
+  padding-left: 0;
+  position: relative;
+}
+
+.pendingOrdersCount {
+  margin:auto;
+  width:50%;
+  margin-left: calc(50% - 25px);
+}
+
+.tileTitle {
+  padding-top: 10px
+}
+
+.pendingOrders {
+  border: 1px solid var(--primaryTextColor);
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 16px;
+  padding-top: 12px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.elapsedOrderTime {
+  margin-top: 10px;
+}
+
+.joinedTable {
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+
+  .tile {
+    background-color: var(--terciaryBackground);
+    width:14.285%;
+    height: 160px;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .tile {
+    background-color: var(--terciaryBackground);
+    width:20%;
+    height: 160px;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .tile {
+    background-color: var(--terciaryBackground);
+    width:25%;
+    height: 160px;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 479px) {
+
+  .tile {
+    background-color: var(--terciaryBackground);
+    width: 50%;
+    height: 100px;
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .pendingOrders {
+    margin-top: 0px;
+    margin-left: 30px;
+  }
+
+  .elapsedOrderTime {
+    margin-top: -35px;
+  }
+
+  .joinedTable {
+    margin-top: -0px;
+  }
+}
+
+.openBill {
+  background-color: var(--green);
+}
+
+.openBillPendingOrders {
+  background-color: var(--red);
+}
+
+.tileJoiningTable {
+  background-color: var(--purple) !important;
+}
+
+.tileRemovingBill {
+  background-color: #8d0000 !important;
+}
+
+.tileSelected {
+  background-color: var(--ovviumYellow) !important;
+}

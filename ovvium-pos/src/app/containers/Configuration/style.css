@@ -1,0 +1,9 @@
+.mainWrapper {
+    height: calc(100% - 55px);
+    overflow-y: auto;
+}
+
+.column {
+    border: 3px solid var(--secondaryBackground);
+    padding: 2px;
+}

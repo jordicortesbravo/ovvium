@@ -1,0 +1,12 @@
+.header {
+    background-color: var(--ovviumYellow);
+    text-align: center;
+    width:100%;
+    position: absolute;
+    top: 0;
+}
+
+.loadingText {
+    margin-top: 25px;
+    color: var(--primaryTextColor);
+}

@@ -1,0 +1,123 @@
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url('../../../assets/fonts/metropolis-medium-webfont.woff2') format('woff2'),
+       url('../../../assets/fonts/metropolis-medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url('../../../assets/fonts/metropolis-regular-webfont.woff2') format('woff2'),
+       url('../../../assets/fonts/metropolis-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url('../../../assets/fonts/metropolis-thin-webfont.woff2') format('woff2'),
+       url('../../../assets/fonts/metropolis-thin-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* global variables for dark /light theme */
+
+:global html {
+  --primaryBackground: #f8f8f8;
+  --secondaryBackground: #f6f6f6;
+  --linkColor: #093c75;
+  --primaryTextColor: #2f2f2f;
+  --secondaryTextColor: #033873;
+  --errorColor: rgb(221, 2, 2);
+  --headerBackground: #fff;
+  --terciaryBackground: #dedede;
+  --terciaryTextColor: #2f2f2f;
+
+  --green: #5cb85c !important;
+  --brown: #795548 !important;
+  --yellow: #ebb642 !important;
+  --red: #e74c3c !important;
+  --pink: #ef3a5b !important;
+  --darkBlue: #31708f !important;
+  --turquoise: #04acad !important;
+  --blue: #31b0d5 !important;
+  --orange: #ec971f !important;
+  --ovviumYellow: #F5B800;
+  --ovviumBlue: #00356F;
+  --gray: gray;
+}
+
+:global html[data-theme='dark'] {
+  --primaryBackground: #303030;
+  --primaryTextColor: #e8e8e8;
+  --linkColor: #2a67ac;
+  --secondaryBackground: #212121;
+  --secondaryTextColor: #255286;
+  --errorColor: rgb(201, 91, 91);
+  --headerBackground: #6d6d6d;
+  --terciaryBackground: #3c3c3c;
+  --terciaryTextColor: #fff;
+  --linkColor: #1da0ff;
+}
+
+:global html,
+:global body {
+  background-color: var(--primaryBackground);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family:  "Metropolis",  sans-serif;
+  color: var(--primaryTextColor);
+}
+
+* {
+  font-family:  "Metropolis",  sans-serif !important;
+}
+
+input, textarea, select { font-family:inherit; }
+
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family:  "Metropolis",  sans-serif;
+  opacity: 1; /* Firefox */
+}
+
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-family:  "Metropolis",  sans-serif;
+}
+
+input::-ms-input-placeholder { /* Microsoft Edge */
+  font-family:  "Metropolis",  sans-serif;
+}
+
+:global #root {
+  height: 100%;
+}
+
+:global a {
+  color: var(--linkColor);
+  text-decoration: none;
+}
+
+:global .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.container {
+  height: calc(100% - 50px);
+}
+
+.fullContainer {
+  height: 100%;
+}
+
+:global .MuiPaper-rounded {
+  border-radius: 0px !important;
+}
+
+:global .MuiAlert-root {
+  border-radius: 0px !important;
+}

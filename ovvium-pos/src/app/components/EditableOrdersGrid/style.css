@@ -1,0 +1,57 @@
+.editableOrderGroup {
+    width: 100%;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    
+}
+
+.editOrderGroupButton {
+    height: 60px;
+    width: 60px; 
+    text-align: center;
+    font-size: 30px
+}
+
+.editOrderGroupButton:active {
+    background-color: var(--ovviumYellow)
+}
+
+.tile {
+    width: calc(100% - 180px);
+    height: 60px;
+    text-align: center;
+    padding: 5px;
+}
+
+.selectableOrderTile {
+    width: calc(100% - 240px);
+    height: 60px;
+    text-align: center;
+    padding: 5px;
+}
+
+.quantityTile {
+    width: 60px;
+    color: var(--ovviumYellow);
+    font-size: 20px;
+}
+
+.fixedQuantityTile {
+    width: 60px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 479px) {
+
+    .tile {
+        font-size:11px;
+    }
+  
+    .fixedQuantityTile {
+        font-size: 20px;
+    }
+
+    .quantityTile {
+        font-size: 20px;
+    }
+}
