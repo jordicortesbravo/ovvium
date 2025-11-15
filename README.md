@@ -238,7 +238,7 @@ flowchart LR
 - ✔ **Ability to build complete products**, not only code  
 - ✔ **Full-stack engineering** across mobile, backend, and desktop  
 - ✔ **Hardware integration** with NFC and QR workflows  
-- ✔ **Leadership** as founder, CTO, and product owner  
+- ✔ **Leadership** as founder, CTO, andaqu product owner  
 - ✔ **Execution under real-world constraints** (COVID era)  
 - ✔ **Architectural thinking** and multi-system orchestration  
 - ✔ **Applied entrepreneurship** and multidisciplinary coordination  
