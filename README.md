@@ -9,18 +9,35 @@
 
 # 🚀 Overview
 
-**Ovvium** was a full-stack restaurant technology platform designed to enable diners to  
-order, split bills, and pay directly from their smartphones — all fully integrated with  
-the restaurant’s POS and operations.
+**Ovvium** was a full-stack restaurant technology platform designed to enable diners to
+order, split bills, and pay directly from their smartphones — all fully integrated with
+the restaurant's POS and operations.
 
-The vision:  
-A frictionless experience where a customer sits at a table, scans an NFC/QR tag attached  
+## 🎬 See Ovvium in Action
+
+> **📱 Complete mobile demo** showing NFC connection, Face ID authentication, ordering flow, bill splitting, tips, and integrated payments
+
+[**Watch Full Demo (2m20s)**](doc/video/app-in-action.mp4)
+
+**Features demonstrated:**
+- 📱 NFC table connection workflow
+- 🔐 Face ID biometric authentication
+- 🛒 Real-time menu browsing and ordering
+- 💰 Advanced bill splitting capabilities
+- 🎯 Tip selection and payment integration
+- 💳 Complete checkout and payment flow
+
+---
+
+## 💡 The Vision
+
+A frictionless experience where a customer sits at a table, scans an NFC/QR tag attached
 to the device on the table, joins their group, and immediately interacts with the live order.
 
-I founded the project, designed the business model, built most of the product, and led a  
+I founded the project, designed the business model, built most of the product, and led a
 team of four across engineering and commercial development.
 
-Although Ovvium ultimately closed during the COVID crisis, the project represents a  
+Although Ovvium ultimately closed during the COVID crisis, the project represents a
 **complete end-to-end startup execution** across product, technology, design, and operations.
 
 ---
@@ -33,13 +50,22 @@ Although Ovvium ultimately closed during the COVID crisis, the project represent
   - **QR code**
 - Diners scanned the tag with the mobile app to **join the table session**.
 - Every diner had **their own individual account** inside the shared table.
-- The menu was loaded live from the restaurant’s catalog.
+- The menu was loaded live from the restaurant's catalog.
 - Diners could:
-  - Browse products  
-  - Send orders to the restaurant  
-  - See other guests’ orders  
-  - Split bills individually or collectively  
-  - Pay directly via integrated payment gateway  
+  - Browse products
+  - Send orders to the restaurant
+  - See other guests' orders
+  - Split bills individually or collectively
+  - Pay directly via integrated payment gateway
+
+### 📟 Physical Table Device
+*Custom-designed hardware for seamless table-to-app connection*
+
+<div align="center">
+  <img src="doc/images/branding/nfc-qr-device.jpeg" alt="NFC/QR Table Device" width="400"/>
+  <br>
+  <em>Physical device placed on each restaurant table with integrated NFC tag and QR code</em>
+</div>  
 
 ### 🔹 Restaurant Side
 - A dedicated **Electron POS** that connected to ticket printers, cash drawers, and hardware.
@@ -106,78 +132,92 @@ Ovvium consisted of **four major systems**, all developed simultaneously:
 
 ---
 
-## 1️⃣ Mobile App — React Native  
+## 1️⃣ Mobile App — React Native
 *(Built before React Hooks existed)*
 
 Features:
-- Table session connection (NFC or QR)  
-- Live menu display  
-- Create & send orders  
-- Individual account per diner  
-- Bill splitting  
-- Integrated payments  
-- Tip workflow  
-- Real-time updates via WebSocket  
+- Table session connection (NFC or QR)
+- Live menu display
+- Create & send orders
+- Individual account per diner
+- Bill splitting
+- Integrated payments
+- Tip workflow
+- Real-time updates via WebSocket
 
 Tech:
-- React Native  
-- Redux  
-- REST API + JWT auth  
+- React Native
+- Redux
+- REST API + JWT auth
 
-Screenshots will be included under:
+### 📱 Mobile App Screenshots
 
-TODO
+| Login & Onboarding | Menu & Ordering | User Experience |
+|-------------------|-----------------|------------------|
+| ![Login](doc/images/app/app-1.jpeg) | ![Menu](doc/images/app/app-2.jpeg) | ![Orders](doc/images/app/app-3.jpeg) |
+| ![Onboarding 1](doc/images/app/on-boarding-1.jpeg) | ![Menu Details](doc/images/app/app-4.jpeg) | ![Profile](doc/images/app/app-5.jpeg) |
+| ![Onboarding 2](doc/images/app/on-boarding-2.jpeg) | ![Cart](doc/images/app/app-6.jpeg) | ![Payments](doc/images/app/app-7.jpeg) |
+
+Additional screens: [Bill Flow](doc/images/app/app-8.jpeg) | [Settings](doc/images/app/app-9.jpeg)
 
 ---
 
 ## 2️⃣ POS — Electron + React
 
 A fully functional Point of Sale with:
-- Hardware access (ticket printers, cash drawer)  
-- Bar/Kitchen screens  
-- Order marching  
-- Multi-terminal support  
-- Real-time updates  
+- Hardware access (ticket printers, cash drawer)
+- Bar/Kitchen screens
+- Order marching
+- Multi-terminal support
+- Real-time updates
 
 Tech:
-- Electron  
-- React  
-- Redux  
-- Direct hardware integration  
-- Restaurant session sync via WebSockets  
+- Electron
+- React
+- Redux
+- Direct hardware integration
+- Restaurant session sync via WebSockets
 
-Screenshots:
+### 🖥️ POS System Screenshots
 
-TODO
+| Main Interface | Kitchen Management | Order Processing |
+|----------------|-------------------|------------------|
+| ![POS Main](doc/images/pos/pos-1.jpeg) | ![Kitchen View](doc/images/pos/pos-2.jpeg) | ![Orders](doc/images/pos/pos-3.jpeg) |
+| ![Table Layout](doc/images/pos/pos-4.jpeg) | ![Order Details](doc/images/pos/pos-5.jpeg) | ![Payment](doc/images/pos/pos-6.jpeg) |
+| ![Menu Management](doc/images/pos/pos-7.jpeg) | ![Real-time Updates](doc/images/pos/pos-8.jpeg) | ![Reports](doc/images/pos/pos-9.jpeg) |
 
 
 
 ---
 
-## 4️⃣ Backoffice — Admin Panel
+## 3️⃣ Backoffice — Admin Panel
 
 Full management panel for restaurant owners:
 
-- Menu management  
-- Product configuration  
-- Restaurant setup  
-- Billing & invoices  
-- Operator management  
-- Analytics (basic)  
+- Menu management
+- Product configuration
+- Restaurant setup
+- Billing & invoices
+- Operator management
+- Analytics (basic)
 
 Tech:
-- React  
-- REST APIs  
-- Secured with JWT  
+- React
+- REST APIs
+- Secured with JWT
 
-Screenshots:
+### 🔧 Brand & Design Assets
 
+| Logo & Branding | Design System | Marketing Materials |
+|----------------|---------------|-------------------|
+| ![Brand 1](doc/images/branding/brand-1.jpeg) | ![Brand 2](doc/images/branding/brand-2.jpeg) | ![Brand 3](doc/images/branding/brand-3.jpeg) |
+| ![Brand 4](doc/images/branding/brand-4.jpeg) | ![Brand 5](doc/images/branding/brand-5.jpeg) | ![Brand 6](doc/images/branding/brand-6.jpeg) |
 
-TODO
+*Complete brand identity designed from scratch, including logo, color palette, typography, and marketing materials.*
 
 ---
 
-## 5️⃣ Backend — Java + Spring Boot
+## 4️⃣ Backend — Java + Spring Boot
 
 The backend connected all systems together:
 
