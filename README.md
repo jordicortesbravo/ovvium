@@ -221,15 +221,51 @@ Tech:
 
 The backend connected all systems together:
 
-- Spring Boot  
-- Spring Security (JWT)  
-- JPA (Hibernate)  
-- PostgreSQL  
-- WebSockets for POS/mobile sync  
-- Payment gateway integration  
-- Fully REST-based API  
+- Spring Boot
+- Spring Security (JWT)
+- JPA (Hibernate)
+- PostgreSQL
+- WebSockets for POS/mobile sync
+- Payment gateway integration
+- Fully REST-based API
 
-Code snippets will be included under:
+---
+
+# 💻 Source Code
+
+## 📱 Mobile App Source Code
+**[🔗 View Complete Mobile App Code](ovvium-app/)**
+
+The mobile app source code includes:
+- **React Native + TypeScript** components and screens
+- **Redux** state management architecture
+- **NFC integration** and hardware communication
+- **Payment flows** and bill splitting logic
+- **Biometric authentication** implementation
+- **Complete package.json** with all dependencies
+
+## ⚙️ Backend Source Code
+**[🔗 View Backend Source Code](ovvium-backend/src/main/java/com/ovvium/services/)**
+
+Key architectural decisions from 2018-2020:
+- **Domain-driven design** with rich business objects and domain events
+- **Spring Boot + Security** with JWT + API Key authentication for multi-client access
+- **Event-driven architecture** for decoupled business logic and async processing
+- **Distributed caching** with Hazelcast for POS synchronization across terminals
+- **Complex payment processing** with commission calculations and provider integrations
+- **WebSocket integration** for real-time bill updates between mobile and POS
+- **Multi-tenant architecture** supporting multiple restaurant customers
+- **AWS integration** for media storage and scalable infrastructure
+
+**Sample components:**
+- [Security Configuration](ovvium-backend/src/main/java/com/ovvium/services/app/config/SecurityConfig.java) - JWT + API Key authentication
+- [Bill Domain Model](ovvium-backend/src/main/java/com/ovvium/services/model/bill/Bill.java) - Complex business logic
+- [Payment Processing](ovvium-backend/src/main/java/com/ovvium/services/model/payment/PaymentOrder.java) - Financial transactions
+- [API Controllers](ovvium-backend/src/main/java/com/ovvium/services/web/controller/bff/v1/) - REST API endpoints
+
+> **Note:** This code represents my architectural thinking from 5-7 years ago. My current approach incorporates modern Spring Boot features, reactive programming patterns, and improved testing strategies while maintaining the same focus on clean architecture and business domain modeling.
+
+> **Security Note:** Configuration files, build scripts, environment variables, API keys, and deployment configurations have been omitted from this repository for security and simplification purposes. The core application logic and architecture are fully represented.
 
 
 
