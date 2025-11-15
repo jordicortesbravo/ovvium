@@ -1,0 +1,334 @@
+{
+    "login" : {
+        "user": "Email",
+        "password" : "Contraseña",
+        "name": "Nombre",
+        "login": "Acceder",
+        "social" : {
+            "login" : "o entra con",
+            "login-button" : "Entra con",
+            "register-button" : "Regístrate con"
+        },
+        "register": "¿Aún no tienes cuenta? Créala aquí",
+        "signup": "Crear cuenta",
+        "alreadyRegistered": "Ya tengo una cuenta. Acceder",
+        "recoverPassword": {
+            "header": "He olvidado la contraseña",
+            "confirmation": "¿Seguro que quiere regenerar la contraseña?",
+            "generated": "Se ha regenerado tu contraseña. Revisa tu correo electrónico",
+            "button": "Recuperar contraseña"
+        },
+        "changePassword": {
+            "title": "Cambiar contraseña",
+            "subtitle": "Actualiza las credenciales",
+            "current": "Contraseña actual",
+            "new": "Nueva contraseña",
+            "repeatNew": "Repita la nueva contraseña"
+        },
+        "activate": {
+            "confirm": "Activa tu cuenta a través del correo que te hemos enviado a ",
+            "waiting": "Estamos activando tu cuenta. Espera unos instantes",
+            "error": "Se ha producido un error al activar tu cuenta. Inténtalo de nuevo en unos instantes"
+        }
+    },
+    "onboarding": {
+        "step1": {
+            "title": "Activa la carta virtual en tu mesa",
+            "description": "Puedes hacerlo acercando tu teléfono al dispositivo NFC o leyendo el código QR"
+        },
+        "step2": {
+            "title": "Pide desde la app sin esperar al camarero",
+            "description": "Tu comanda se recibe al momento"
+        },
+        "step3": {
+            "title": "La preparamos y servimos más rápido",
+            "description": "Para que disfrutes sin esperas"
+        },
+        "step4": {
+            "title": "Cuentas individualizadas",
+            "description": "Cuando sois varios en la misma mesa, cada uno paga lo suyo. Aunque, si prefieres, puedes invitar a tus amigos"
+        },
+        "step5": {
+            "title": "Paga a través de la app",
+            "description": "Con seguridad y sin esperas"
+        },
+        "tricks": {
+            "title": "Cómo funciona",
+            "cart": "Confirma tu pedido para enviar la comanda a cocina",
+            "productList": "Añade un producto a tu cesta deslizando a la izquierda o desde el detalle del producto. Confirma tu comanda desde la pestaña Cesta",
+            "profile": "Configura tus alergias para resaltar los productos con riesgo",
+            "billStep1": "Cada miembro de la mesa tiene su cuenta individual. Paga lo tuyo o invita a quien quieras",
+            "billStep2": "Puedes seleccionar los comensales a los que quieres invitar desde el panel superior."
+        }
+    },
+    "products" : {
+        "label" : "Carta",
+        "subtitle": "¡Busca y pide lo que te apetezca!",
+        "configure": {
+            "title": "Configura tu plato",
+            "pick": "Selecciona los productos y confirma tu menú",
+            "subtitle": "Agrega notas en la comanda si es necesario",
+            "serviceTime": "¿Cuándo quieres que te sirvamos el plato de ",
+            "notes": {
+                "question": "Agrega una nota para cocina si lo deseas",
+                "examples": "Ejemplos: Sin salsa, carne muy poco hecha..."
+            },
+            "share": {
+                "question": "¿Es para compartir?",
+                "yes": "Sí",
+                "no": "No"
+            }
+        },
+        "serviceTime": {
+            "SOONER": "Ahora",
+            "STARTER": "Entrante",
+            "FIRST_COURSE": "Primero",
+            "SECOND_COURSE": "Segundo",
+            "DESSERT": "Postre",
+            "OTHER": "Otros"
+        },
+        "actions": {
+            "proposeMenu": "Proponer menú",
+            "anotherRound": "Otra ronda",
+            "uploadPhoto": "Subir Foto",
+            "uploadingPhoto": "Subiendo foto",
+            "comment": "Opinar",
+            "ask": "Pedir",
+            "askShared": "Compartir",
+            "search": "Buscar",
+            "takeFirstPhoto": "¡Sé el primero en hacer una foto del producto!"
+        },
+        "type": {
+            "food": "Comida",
+            "drink": "Bebida",
+            "group": "Ofertas"
+        },
+        "ratings" : {
+            "label" : "Puntuación",
+            "maxRating" : "de 5",
+            "rate" : "Valorar",
+            "header": "Reseña",
+            "leaveAComment" : "Agrega tu comentario",
+            "opinions": "Opiniones",
+            "emptyComments": "No hay comentarios sobre este producto.",
+            "stars": {
+                "1": "Malo",
+                "2": "Regular",
+                "3": "Bueno",
+                "4": "Muy bueno",
+                "5": "Increíble"
+            }
+        },
+        "currency" : "€",
+        "unitPrice": "Precio unitario",
+        "recommendations": "Recomendaciones"
+    },
+    "bill" : {
+        "label" : "Cuenta",
+        "title" : "Cuentas",
+        "subtitle": "Vuestras cuentas, ¡divididas!",
+        "emptyMessage": "¡Únete a una mesa, busca y pide lo que te apetezca!",
+        "cart": {
+            "label": "Cesta",
+            "emptyMessage": "La cesta está vacía",
+            "send": "Confirmar pedido",
+            "add": "Añadir al carrito"
+        },
+        "join": {
+            "title": "Activa la carta",
+            "joining": "Activando la carta",
+            "qr": {
+                "text": "Lee el código QR de la etiqueta que hay en la mesa",
+                "read": "Activar con QR"
+            },
+            "nfc": {
+                "text": "Acerca tu móvil al dispositivo inteligente de Ovvium que hay en la mesa para activar la carta y empezar a pedir",
+                "text2": "Acerca tu móvil al dispositivo de Ovvium",
+                "read": "Activar con NFC",
+                "explore": "Activar NFC"
+            }
+        },
+        "invoice": {
+            "label": "Factura",
+            "detail": "Detalle de la factura",
+            "subtitle": "Puedes consultar todos los datos de la factura",
+            "issuer": {
+                "name": "Establecimiento",
+                "cif": "CIF/NIF"
+            },
+            "id": "Nº de Factura",
+            "date": "Fecha",
+            "history": {
+                "label": "Facturas",
+                "empty": "Tu histórico está vacío"
+            },
+            "base": "Base imponible",
+            "tax": "I.V.A (10%)",
+            "tip": "Propina"
+        },
+        "myBill": "Mi cuenta",
+        "billOf": "Cuenta de ",
+        "detail": "Detalle de la Cuenta",
+        "selectBill": "Selecciona la cuenta de quién quieres pagar.",
+        "totalBill": "Cuenta Total",
+        "empty": "La cuenta está vacía",
+        "total": "Total",
+        "pending": "Pendiente",
+        "paid": "Pagado",
+        "tip": {
+            "title": "Valora tu experiencia",
+            "description": "Si te ha gustado, ¡no te olvides de dejar propina!",
+            "noTip": "Sin propina",
+            "otherTip": "Otra cantidad",
+            "otherTipPlaceholder": "Agrega la propina"
+        },
+        "waiter" : "Camarero",
+        "payment": {
+            "methods": "Método de pago",
+            "confirmation": "Confirmación de pago",
+            "resume": "Resumen de pago",
+            "creditCard": "Tarjeta de crédito",
+            "debitCard": "Tarjeta de débito",
+            "entity": "Entidad",
+            "bills": "Cuentas",
+            "subtotal": "Subtotal",
+            "tip": "Propina",
+            "total": "Total a pagar",
+            "ok": "Pago realizado correctamente",
+            "ko": "No se ha podido completar el pago.",
+            "pickPaymentMethod": "Tarjetas de crédito",
+            "country": {
+                "title": "País",
+                "spain": "España"
+            },
+            "thanks": "¡Gracias por tu compra!"
+        }
+    },
+    "profile" : {
+        "label" : "Perfil",
+        "subtitle": "Configura tus preferencias",
+        "edit": {
+            "title": "Editar perfil",
+            "subtitle": "Modifica tu cuenta"
+        },
+        "logout" : {
+            "label" : "Cerrar sesión",
+            "subtitle": "Salir",
+            "confirm" : "¿Seguro que quieres cerrar la sesión?"
+        },
+        "paymentMethods" : {
+            "title" : "Métodos de pago",
+            "subtitle": "Añade o elimina tarjetas de crédito",
+            "add": "Agregar una tarjeta",
+            "favourite": "Tarjeta favorita",
+            "remove": {
+                "label": "Eliminar tarjeta",
+                "question": "¿Estás seguro que quieres eliminar esta tarjeta de crédito?"
+            }
+        },
+        "remove": {
+            "title": "Eliminar cuenta",
+            "subtitle": "Acción irreversible",
+            "question": "¿Seguro que quieres eliminar definitivamente tu cuenta?",
+            "confirm": "La acción es irreversible"
+        },
+        "terms": {
+            "label": "Términos y condiciones",
+            "subtitle": "Textos legales"
+        },
+        "allergens": {
+            "label" : "Alérgenos",
+            "allergy": "Alergia",
+            "subtitle": "Configura tus alergias e intolerancias",
+            "list": "Lista de alérgenos",
+            "items": {
+                "gluten": "Gluten",
+                "crustaceans": "Crustáceos",
+                "eggs": "Huevos",
+                "fish": "Pescado",
+                "peanuts": "Cacahuetes",
+                "soy": "Soja",
+                "dairy_products": "Lactosa",
+                "nuts": "Frutos con cáscara",
+                "celery": "Apio",
+                "mustard": "Mostaza",
+                "sesame": "Sésamo",
+                "sulphites": "Sulfitos",
+                "lupins": "Altramuces",
+                "mollusks": "Moluscos"
+            }
+        },
+        "foodPreferences": {
+            "label": "Preferencias alimentarias",
+            "subtitle": "Indica si eres vegano, omnívoro... ",
+            "list": "Lista de preferencias alimentarias",
+            "items": {
+                "omnivore": "Omnívoro",
+                "celiac": "Celíaco",
+                "vegetarian": "Vegetariano",
+                "vegan": "Vegano",
+                "raw_vegan": "Crudivegano",
+                "ovolactovegetarians": "Ovolactovegetarianos",
+                "pecevegetarians": "Pecevegetarianos"
+            }
+        },
+        "paymentMethod": {
+            "resume": "Datos de la tarjeta",
+            "name": "Nombre",
+            "creditCardNumber": "Nº de tarjeta",
+            "expirationDate": "Caducidad",
+            "dataSecured": "Los datos de pago se almacenarán de forma segura",
+            "validation": {
+                "name": {
+                    "required": "El titular de la tarjeta es obligatorio"
+                },
+                "creditCardNumber": {
+                    "required": "El número de la tarjeta es obligatorio",
+                    "match": "El número de la tarjeta no es válido"
+                },
+                "expirationDate": {
+                    "required": "La fecha de caducidad es obligatoria",
+                    "match": "El formato no es válido (mm/yy)"
+                }
+            }
+        }
+    },
+    "actions" : {
+        "confirm": "Aceptar",
+        "cancel": "Cancelar",
+        "pay": "Pagar",
+        "send" : "Enviar",
+        "continue": "Continuar",
+        "back": "Atrás",
+        "save": "Guardar",
+        "close": "Cerrar"
+    },
+    "error": {
+        "0": "Se ha producido un error de conexión",
+        "401": "Nombre de usuario o contraseña incorrecta.",
+        "6001": "El usuario ya existe",
+        "7001": "Debes activar tu usuario a través del correo que te hemos enviado",
+        "validation": {
+            "blankEmail": "El email es obligatorio",
+            "blankPassword": "La contraseña es obligatoria",
+            "badPasswordFormat": "La contraseña debe tener al menos 8 carácteres",
+            "blankName": "El nombre es obligatorio",
+            "invalidEmail": "El formato del email no es válido",
+            "changePassword": {
+                "requiredFields": "Todos los campos son obligatorios",
+                "newAndRepeteadPasswordMustBeEqual": "Los dos campos de nueva contraseña deben ser iguales",
+                "currentAndNewPasswordCantBeEqual": "La nueva contraseña debe ser diferente a la actual",
+                "length": "La contraseña debe tener al menos 8 caracteres",
+                "wrongPassword": "Contraseña incorrecta"
+            }
+        }
+    },
+    "elapsedTime": {
+        "today": "Hoy",
+        "yesterday": "Ayer",
+        "lessThanWeek": "Hace {{0}} días",
+        "oneWeek": "Hace 1 semana",
+        "lessThanMonth": "Hace {{0}} semanas",
+        "oneMonth": "Hace 1 mes"
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "name" : {
+    "defaultValue": "Huevos fritos",
+    "translations": {
+      "es-ES" : "Huevos fritos"
+    }
+  },
+  "description" : {
+    "defaultValue": "a la sartén",
+    "translations": {
+      "es-ES" : "a la sartén"
+    }
+  },
+  "basePrice" : 3.5,
+  "tax" : 0.21,
+  "type" : "FOOD",
+  "serviceBuilderLocation" : "KITCHEN",
+  "categoryId" : "6e2a5f11-0231-4460-a0b7-584e4a3dd10d"
+}

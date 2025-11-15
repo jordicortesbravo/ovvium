@@ -1,0 +1,334 @@
+{
+    "login" : {
+        "user": "Email",
+        "password" : "Contrasenya",
+        "name": "Nom",
+        "login": "Accedir",
+        "social" : {
+            "login" : "o entra amb",
+            "login-button" : "Entra amb",
+            "register-button" : "Registra't amb"
+        },
+        "register": "Encara no tens compte? Crea-ho aquí",
+        "signup": "Crear compte",
+        "alreadyRegistered": "Ja tinc compte. Accedir",
+        "recoverPassword": {
+            "header": "He oblidat la contrasenya",
+            "confirmation": "Segur que vols regenerar la contrasenya?",
+            "generated": "S'ha regenerat la teva contrasenya. Revisa el teu correu electrònic",
+            "button": "Recuperar contrasenya"
+        },
+        "changePassword": {
+            "title": "Canviar contrasenya",
+            "subtitle": "Actualitza les credencials",
+            "current": "Contrasenya actual",
+            "new": "Nova contrasenya",
+            "repeatNew": "Repeteixi la nova contrasenya"
+        },
+        "activate": {
+            "confirm": "Activa el teu compte a través del correu que t'hem hem enviat a ",
+            "waiting": "Estem activant el teu compte. Espera un moment",
+            "error": "S'ha produït un error al activar el teu compte. Intenta-ho de nou."
+        }
+    },
+    "onboarding": {
+        "step1": {
+            "title": "Activa la carta virtual a la teva taula",
+            "description": "Pots fer-ho apropant el teu telèfon al dispositiu NFC o llegint el codi QR"
+        },
+        "step2": {
+            "title": "Demana desde la app sense esperar al cambrer",
+            "description": "La teva comanda es tramita al moment"
+        },
+        "step3": {
+            "title": "Ho preparem y servim més ràpid",
+            "description": "Per a que disfrutis sense esperes"
+        },
+        "step4": {
+            "title": "Comptes individualitzats",
+            "description": "Quan hi ha diversos comensals, cadascú paga lo seu. Tot i que si ho prefereixes, pots convidar als teus amics"
+        },
+        "step5": {
+            "title": "Paga a través de l'aplicació",
+            "description": "Amb seguretat i sense esperes"
+        },
+        "tricks": {
+            "title": "Com funciona",
+            "cart": "Confirma la teva comanda per enviar-la a cuina",
+            "productList": "Agefeix un producte al cistell movent a l'esquerra el producte o entrant al detall. Confirma la comanda desde la pantalla de Cistell",
+            "profile": "Configura les teves al·lèrgies per resaltar productes perillosos",
+            "billStep1": "Cada comensal té el seu compte individualitzat. Paga lo teu o convida a qui vulguis",
+            "billStep2": "Pots seleccionar els comensals als que vols convidar desde la part superior."
+        }
+    },
+    "products" : {
+        "label" : "Carta",
+        "subtitle": "Cerca i demana el que et vingui de gust!",
+        "configure": {
+            "title": "Configura el teu plat",
+            "pick": "Selecciona els productes i confirma el teu menú",
+            "subtitle": "Agrega notes a la comanda si és necessari",
+            "serviceTime": "Quan vols que et servim el plat de ",
+            "notes": {
+                "question": "Afegeix una nota per cuina si vols",
+                "examples": "Exemples: Sense salsa, carn poc feta..."
+            },
+            "share": {
+                "question": "És per compartir?",
+                "yes": "Sí",
+                "no": "No"
+            }
+        },
+        "serviceTime": {
+            "SOONER": "Ara",
+            "STARTER": "Entrant",
+            "FIRST_COURSE": "Primer",
+            "SECOND_COURSE": "Segón",
+            "DESSERT": "Postre",
+            "OTHER": "Altres"
+        },
+        "actions": {
+            "proposeMenu": "Proposar menú",
+            "anotherRound": "Una ronda més",
+            "uploadPhoto": "Foto",
+            "uploadingPhoto": "Pujant fotografia",
+            "comment": "Opinar",
+            "ask": "Demanar",
+            "askShared": "Compartir",
+            "search": "Cercar",
+            "takeFirstPhoto": "Sigues el primer en fer una foto del producte!"
+        },
+        "type": {
+            "food": "Menjar",
+            "drink": "Beguda",
+            "group": "Ofertes"
+        },
+        "ratings" : {
+            "label" : "Puntuació",
+            "maxRating" : "sobre 5",
+            "rate" : "Valorar",
+            "header": "Resenya",
+            "leaveAComment" : "Afegeix el teu comentari",
+            "opinions": "Opinions",
+            "emptyComments": "No hi ha comentaris d'aquest producte.",
+            "stars": {
+                "1": "Dolent",
+                "2": "Regular",
+                "3": "Bo",
+                "4": "Molt bo",
+                "5": "Impresionant"
+            }
+        },
+        "currency" : "€",
+        "unitPrice": "Preu unitari",
+        "recommendations": "Recomanacions"
+    },
+    "bill" : {
+        "label" : "Compte",
+        "title" : "Comptes",
+        "subtitle": "Els vostres comptes dividits!",
+        "emptyMessage": "Uneix-te a una taula, cerca i demana el que et vingui de gust!",
+        "cart": {
+            "label": "Cistell",
+            "emptyMessage": "El cistell està buit",
+            "send": "Confirmar comanda",
+            "add": "Afegir al cistell"
+        },
+        "join": {
+            "title": "Activa la carta",
+            "joining": "Activant la carta",
+            "qr": {
+                "text": "Llegeix el codi QR de l'etiqueta que hi ha a taula",
+                "read": "Activar amb QR"
+            },
+            "nfc": {
+                "text": "Apropa el telèfon al dispositiu d'Ovvium de la taula per activar la carta i demana el que vulguis",
+                "text2": "Apropa el telèfon al dispositiu d'Ovvium",
+                "read": "Activar amb NFC",
+                "explore": "Activar NFC"
+            }
+        },
+        "invoice": {
+            "label": "Factura",
+            "detail": "Detall de la factura",
+            "subtitle": "Pots consultar totes les dades de la factura",
+            "issuer": {
+                "name": "Establiment",
+                "cif": "CIF/NIF"
+            },
+            "id": "Nº de Factura",
+            "date": "Data",
+            "history": {
+                "label": "Factures",
+                "empty": "El teu històric de factures està buit"
+            },
+            "base": "Base imposable",
+            "tax": "I.V.A (10%)",
+            "tip": "Propina"
+        },
+        "myBill": "El meu compte",
+        "billOf": "Compte de ",
+        "detail": "Detall del compte",
+        "selectBill": "Selecciona quin compte vols pagar",
+        "totalBill": "Compte Total",
+        "empty": "El compte està buit",
+        "total": "Total",
+        "pending": "Pendent",
+        "paid": "Pagat",
+        "tip": {
+            "title": "Valora la teva experiència",
+            "description": "Si t'ha agradat, no oblidis deixar propina!",
+            "noTip": "Sense propina",
+            "otherTip": "Una altre quantitat",
+            "otherTipPlaceholder": "Afegeix propina"
+        },
+        "waiter" : "Cambrer",
+        "payment": {
+            "methods": "Mètode de pagament",
+            "confirmation": "Confirmació de pagament",
+            "resume": "Resum de pagament",
+            "creditCard": "Tarjeta de crèdit",
+            "debitCard": "Tarjeta de dèbit",
+            "entity": "Entitat",
+            "bills": "Comptes",
+            "subtotal": "Subtotal",
+            "tip": "Propina",
+            "total": "Total a pagar",
+            "ok": "Pagament realitzat correctament",
+            "ko": "No s'ha pogut completar el pagament.",
+            "pickPaymentMethod": "Tarjetes de crèdit",
+            "country": {
+                "title": "País",
+                "spain": "Espanya"
+            },
+            "thanks": "Gràcies per la teva compra!"
+        }
+    },
+    "profile" : {
+        "label" : "Perfil",
+        "subtitle": "Configura les teves preferències",
+        "edit": {
+            "title": "Modificar perfil",
+            "subtitle": "Modifica el teu compte"
+        },
+        "logout" : {
+            "label" : "Tancar sessió",
+            "subtitle": "Sortir",
+            "confirm" : "Segur que vols tancar la sessió?"
+        },
+        "paymentMethods" : {
+            "title" : "Mètodes de pagament",
+            "subtitle": "Afegeix o elimina mètodes de pagament",
+            "add": "Afegeix una tarjeta",
+            "favourite": "Tarjeta favorita",
+            "remove": {
+                "label": "Eliminar tarjeta",
+                "question": "Estàs segur que vol eliminar aquesta tarjeta de crèdit?"
+            }
+        },
+        "remove": {
+            "title": "Elimina el teu compte",
+            "subtitle": "Acció irreversible",
+            "question": "Segur que vols eliminar definitivament el teu compte?",
+            "confirm": "L'acció és irreversible"
+        },
+        "terms": {
+            "label": "Termes i condicions",
+            "subtitle": "Textes legals"
+        },
+        "allergens": {
+            "label" : "Al·lèrgens",
+            "allergy": "Al·lèrgia",
+            "subtitle": "Configura al·lèrgies o intoleràncies",
+            "list": "Lista d'al·lèrgens",
+            "items": {
+                "gluten": "Gluten",
+                "crustaceans": "Crustacis",
+                "eggs": "Ous",
+                "fish": "Peix",
+                "peanuts": "Cacahuets",
+                "soy": "Soja",
+                "dairy_products": "Lactosa",
+                "nuts": "Fruits amb closca",
+                "celery": "Api",
+                "mustard": "Mostassa",
+                "sesame": "Sèsam",
+                "sulphites": "Sulfits",
+                "lupins": "Tramussos",
+                "mollusks": "Mol·luscs"
+            }
+        },
+        "foodPreferences": {
+            "label": "Preferències alimentàries",
+            "subtitle": "Indica si ets vegetarià, omnívor... ",
+            "list": "Llista de preferències alimentàries",
+            "items": {
+                "omnivore": "Omnívor",
+                "celiac": "Celíac",
+                "vegetarian": "Vegetarià",
+                "vegan": "Vegà",
+                "raw_vegan": "Crudivegà",
+                "ovolactovegetarians": "Ovolactovegetarià",
+                "pecevegetarians": "Pecevegetarià"
+            }
+        },
+        "paymentMethod": {
+            "resume": "Dades de la tarjeta",
+            "name": "Nom",
+            "creditCardNumber": "Nº de tarjeta",
+            "expirationDate": "Caducitat",
+            "dataSecured": "Les dades de pagament s'emmagatzemen de forma segura",
+            "validation": {
+                "name": {
+                    "required": "El titular de la tarjeta és obligatori"
+                },
+                "creditCardNumber": {
+                    "required": "El número de tarjeta és obligatori",
+                    "match": "El número de la tarjeta no és vàlid"
+                },
+                "expirationDate": {
+                    "required": "La data de caducitat és obligatòria",
+                    "match": "El format no és vàlid (mm/yy)"
+                }
+            }
+        }
+    },
+    "actions" : {
+        "confirm": "Acceptar",
+        "cancel": "Cancel·lar",
+        "pay": "Pagar",
+        "send" : "Enviar",
+        "continue": "Continuar",
+        "back": "Enrere",
+        "save": "Guardar",
+        "close": "Tancar"
+    },
+    "error": {
+        "0": "S'ha produït un error de conexió",
+        "401": "Nom d'usuari o contrasenya incorrecte.",
+        "6001": "L'usuari ja existeix",
+        "7001": "Has d'activar el teu usuari a través del correu que t'hem enviat",
+        "validation": {
+            "blankEmail": "L'email és obligatori",
+            "blankPassword": "La contrasenya és obligatòria",
+            "badPasswordFormat": "La contrasenya ha de tenir al menys 8 caràcters",
+            "blankName": "El nom és obligatori",
+            "invalidEmail": "El format del email no és vàlid",
+            "changePassword": {
+                "requiredFields": "Tots els camps son obligatoris",
+                "newAndRepeteadPasswordMustBeEqual": "Els dos camps de nova contrasenya han de ser iguals",
+                "currentAndNewPasswordCantBeEqual": "La nova contrasenya ha de ser diferent a l'actual",
+                "length": "La contrasenya ha de tenir al menys 8 caràcters",
+                "wrongPassword": "Contrasenya incorrecta"
+            }
+        }
+    },
+    "elapsedTime": {
+        "today": "Avui",
+        "yesterday": "Ahir",
+        "lessThanWeek": "Fa {{0}} dies",
+        "oneWeek": "Fa 1 setmana",
+        "lessThanMonth": "Fa {{0}} setmanes",
+        "oneMonth": "Fa 1 mes"
+    }
+}

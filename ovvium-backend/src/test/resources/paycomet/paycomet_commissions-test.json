@@ -1,0 +1,41 @@
+{
+  "splitCommissionPercentage": 0.0015,
+  "config": {
+    "CONSUMER": {
+      "NATIONAL": {
+        "basePercentage": 0.005,
+        "commission": 0.09
+      },
+      "NOT_EUROPEAN": {
+        "basePercentage": 0.027,
+        "commission": 0.15
+      },
+      "EUROPEAN_NO_EEA": {
+        "basePercentage": 0.015,
+        "commission": 0.09
+      },
+      "EUROPEAN": {
+        "basePercentage": 0.006,
+        "commission": 0.09
+      }
+    },
+    "BUSINESS": {
+      "NATIONAL": {
+        "basePercentage": 0.0085,
+        "commission": 0.09
+      },
+      "NOT_EUROPEAN": {
+        "basePercentage": 0.0295,
+        "commission": 0.15
+      },
+      "EUROPEAN_NO_EEA": {
+        "basePercentage": 0.018,
+        "commission": 0.09
+      },
+      "EUROPEAN": {
+        "basePercentage": 0.018,
+        "commission": 0.09
+      }
+    }
+  }
+}

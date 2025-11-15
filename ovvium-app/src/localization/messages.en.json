@@ -1,0 +1,335 @@
+{
+    "login" : {
+        "user": "Email",
+        "password" : "Password",
+        "name": "Name",
+        "login": "Login",
+        "social" : {
+            "login" : "or login with",
+            "login-button" : "Sign in with",
+            "register-button" : "Sign up with"
+        },
+        "register": "Register",
+        "signup": "Signup",
+        "alreadyRegistered": "I have an account. Login",
+        "recoverPassword": {
+            "header": "Forgot password",
+            "confirmation": "Are you sure to recover your password?",
+            "generated": "A temporary password has been created and sent to your email.",
+            "button": "Recover password"
+        },
+        "changePassword": {
+            "title": "Change password",
+            "subtitle": "Change your credentials",
+            "current": "Current password",
+            "new": "New password",
+            "repeatNew": "Repeat new password"
+        },
+        "activate": {
+            "confirm": "Activate your account through the email that we have sent to ",
+            "waiting": "We are activating your account. Please wait a few moments",
+            "error": "There was an error activating your account. Try again in a few minutes."
+        }
+    },  
+    "onboarding": {
+        "step1": {
+            "title": "Activate the virtual menu",
+            "description": "You can do this by moving your phone closer to the NFC device or scanning the QR code"
+        },
+        "step2": {
+            "title": "Order from the app without waiting for the waiter",
+            "description": "Your orders are received instantly"
+        },
+        "step3": {
+            "title": "We prepare and serve it faster",
+            "description": "so you can enjoy without waiting"
+        },
+        "step4": {
+            "title": "Individual accounts",
+            "description": "When you are several people at the same table, each one pays his own. However, if you want, you can invite your friends"
+        },
+        "step5": {
+            "title": "Pay through the app",
+            "description": "Safely and without waiting"
+        },
+        "tricks": {
+            "title": "Tip",
+            "cart": "The products in the cart are not sent to the kitchen until the order is confirmed. You can delete or modify the quantity of products in your cart by laterally scrolling each of the products, using the action buttons that will appear.",
+            "productList": "Search for products through the listing or search bar. To order a product, you can scroll it laterally to show the action button or you can enter it to order it from the detail screen. If you have intolerances or allergies configured in your profile, dangerous products will be labeled.",
+            "profile": "Configure your allergies to label risky products",
+            "billStep1": "Each item on the list represents the personal account of each person at the table. The total account encompasses all accounts. The products you order will go to your account and to the total account.",
+            "billStep2": "You can select the person you want to invite from the top panel."
+        }
+    },
+    "products" : {
+        "label" : "Products",
+        "subtitle": "Search and order products",
+        "configure": {
+            "title": "Configure your order",
+            "pick": "Pick your preferences and confirm your menu",
+            "subtitle": "Add notes to the order if necessary",
+            "serviceTime": "When you want us to serve you the plate of ",
+            "notes": {
+                "question": "Add some notes if you want",
+                "examples": "Examples: No sauce, medium rare meat..."
+            },
+            "share": {
+                "question": "Is it for sharing?",
+                "yes": "Yes",
+                "no": "No"
+            }
+        },
+        "serviceTime": {
+            "SOONER": "Sooner",
+            "STARTER": "Starter",
+            "FIRST_COURSE": "First course",
+            "SECOND_COURSE": "Second course",
+            "DESSERT": "Dessert",
+            "OTHER": "Other"
+        },
+        "actions": {
+            "proposeMenu": "Propose menu",
+            "anotherRound": "Another round",
+            "uploadPhoto": "Photo",
+            "uploadingPhoto": "Uploading picture",
+            "comment": "Rate",
+            "ask": "Order",
+            "askShared": "Order for sharing",
+            "search": "Search",
+            "takeFirstPhoto": "Be the first to take a photo!"
+        },
+        "type": {
+            "food": "Food",
+            "drink": "Drinks",
+            "group": "Offers"
+        },
+        "ratings" : {
+            "label" : "Ratings",
+            "maxRating" : "of 5",
+            "rate" : "Rate",
+            "header" : "Write review",
+            "leaveAComment" : "Leave a comment",
+            "opinions": "Reviews",
+            "emptyComments": "No comments for this product yet.",
+            "stars": {
+                "1": "Bad",
+                "2": "Regular",
+                "3": "Good",
+                "4": "Very good",
+                "5": "Awesome"
+            }
+        },
+        "currency" : "€",
+        "unitPrice": "Price",
+        "recommendations": "Recommendations"
+    },
+    "bill" : {
+        "label" : "Bill",
+        "title" : "Bills",
+        "subtitle": "Your bills, splitted",
+        "emptyMessage": "Join a table and start ordering!",
+        "cart": {
+            "label": "Cart",
+            "emptyMessage": "Empty cart",
+            "send": "Confirm Order",
+            "add": "Add to cart"
+        },
+        "join": {
+            "title": "Join to bill",
+            "joining": "Joining to bill",
+            "qr": {
+                "text": "Scan the QR code on the table",
+                "read": "Scan QR"
+            },
+            "nfc": {
+                "text": "Put your phone onto the NFC smart card on the table",
+                "text2": "Put your phone onto the Ovvium device",
+                "read": "Scan NFC",
+                "explore": "Scan"
+            }
+        },
+        "invoice": {
+            "label": "Invoice",
+            "detail": "Invoice detail",
+            "subtitle": "Review all data",
+            "issuer": {
+                "name": "Issuer",
+                "cif": "Issuer ID"
+            },
+            "id": "Invoice ID",
+            "date": "Date",
+            "history": {
+                "label": "Invoices",
+                "empty": "Empty history"
+            },
+            "base": "Base",
+            "tax": "Tax (10%)",
+            "tip": "Tip"
+        },
+        "myBill": "My bill",
+        "billOf": "Bill of ",
+        "detail": "Bill detail",
+        "selectBill": "Select which Bill you want to pay",
+        "totalBill": "Total Bill",
+        "empty": "The bill is empty",
+        "total": "Total",
+        "pending": "Pending",
+        "paid": "PAID",
+        "tip": {
+            "title": "Tip",
+            "description": "We hope you were satisfied with the service. You can leave a tip using the Ovvium app. Thank you very much and we hope to see you again in ",
+            "noTip": "No Tip",
+            "otherTip": "Other tip",
+            "otherTipPlaceholder": "Add tip"
+        },
+        "waiter": "Waiter",
+        "payment": {
+            "methods": "Add payment method",
+            "confirmation": "Payment authorization",
+            "resume": "Payment resume",
+            "creditCard": "Credit card",
+            "debitCard": "Debit card",
+            "entity": "Branch",
+            "bills": "Bills",
+            "subtotal": "Subtotal",
+            "tip": "Tip",
+            "total": "Total",
+            "ok": "Payment has been made successfully",
+            "ko": "Payment was not successful",
+            "pickPaymentMethod": "Payment methods",
+            "country": {
+                "title": "Country",
+                "spain": "Spain"
+            },
+            "thanks": "Thanks for your purchase!"
+        }
+    },
+    "profile" : {
+        "label" : "Profile",
+        "subtitle": "Configure your profile",
+        "edit": {
+            "title": "Edit profile",
+            "subtitle": "Modify your account"
+        },
+        "logout" : {
+            "label" : "Logout",
+            "subtitle": "Close your session",
+            "confirm" : "Do you want to logout?"
+        },
+        "paymentMethods" : {
+            "title" : "Payment methods",
+            "subtitle": "Add or remove payment methods",
+            "add": "Add payment method",
+            "favourite": "Favorite",
+            "remove": {
+                "label": "Remove payment method",
+                "question": "Are you sure to remove this payment method?"
+            }
+        },
+        "remove": {
+            "title": "Remove account",
+            "subtitle": "Irreversible action",
+            "question": "Are you sure you want to remove your account?",
+            "confirm": "This action can't be undone"
+        },
+        "terms": {
+            "label": "Terms & conditions",
+            "subtitle": "Legal"
+        },
+        "allergens": {
+            "label" : "Allergens",
+            "allergy": "Allergy",
+            "list": "Allergens list",
+            "subtitle": "Configure your allergies",
+            "items": {
+                "gluten": "Gluten",
+                "crustaceans": "Crustaceans",
+                "eggs": "Eggs",
+                "fish": "Fish",
+                "peanuts": "Peanuts",
+                "soy": "Soy",
+                "dairy_products": "Dairy products",
+                "nuts": "Nuts",
+                "celery": "Celery",
+                "mustard": "Mustard",
+                "sesame": "Sesame",
+                "sulphites": "Sulphites",
+                "lupins": "Lupins",
+                "mollusks": "Mollusks"
+            }
+        },
+        "foodPreferences": {
+            "label": "Food preferences",
+            "subtitle": "Vegan, omnivore...",
+            "list": "Food preferences list",
+            "items": {
+                "omnivore": "Omnivore",
+                "celiac": "Celiac",
+                "vegetarian": "Vegetarian",
+                "vegan": "Vegan",
+                "raw_vegan": "Raw vegan",
+                "ovolactovegetarians": "Ovolactovegetarians",
+                "pecevegetarians": "Pescetarian "
+            }
+        },
+        "paymentMethod": {
+            "resume": "Card data",
+            "name": "Name",
+            "creditCardNumber": "Card number",
+            "expirationDate": "Expiration date",
+            "dataSecured": "Payment data is saved securely",
+            "validation": {
+                "name": {
+                    "required": "Name is required"
+                },
+                "creditCardNumber": {
+                    "required": "Card number is required",
+                    "match": "Card number is not valid"
+                },
+                "expirationDate": {
+                    "required": "Expiration date is required",
+                    "match": "Invalid format (mm/yy)"
+                }
+            }
+        }
+    },
+    "actions" : {
+        "confirm": "Confirm",
+        "cancel": "Cancel",
+        "pay": "Pay",
+        "send" : "Send",
+        "continue": "Next",
+        "back": "Back",
+        "save": "Save",
+        "close": "Close"
+    },
+    "error": {
+        "0": "Unexpected error has ocurred. Try again in a few minutes.",
+        "401": "Username or password incorrect",
+        "5001": "The user already exists",
+        "7001": "You must activate your user through the email we have sent you",
+        "5002": "The user doesn't exist",
+        "validation": {
+            "blankEmail": "Email required",
+            "blankPassword": "Password required",
+            "badPasswordFormat": "The password must have at least 8 characters",
+            "blankName": "Name required",
+            "invalidEmail": "Invalid email format",
+            "changePassword": {
+                "requiredFields": "All fields are required",
+                "newAndRepeteadPasswordMustBeEqual": "Both new passowrd fields must be equal",
+                "currentAndNewPasswordCantBeEqual": "Current password and new password must be different",
+                "length": "The minimum pasword's length is 8",
+                "wrongPassword": "Wrong password"
+            }
+        }
+    },
+    "elapsedTime": {
+        "today": "Today",
+        "yesterday": "Yesterday",
+        "lessThanWeek": "{{0}} days ago",
+        "oneWeek": "1 week ago",
+        "lessThanMonth": "{{0}} weeks ago",
+        "oneMonth": "1 month ago"
+    }
+}

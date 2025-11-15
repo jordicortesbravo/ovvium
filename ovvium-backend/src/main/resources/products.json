@@ -1,0 +1,946 @@
+[
+	{
+		"nameES": "Ensalada de bolitas de mozarella",
+		"descriptionES": "con Cherry, Membrillo, Frutos Secos y Vinagreta",
+		"nameEN": "Mozarella Cheese Salad",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "ENTRANTES",
+		"productType": "FOOD",
+		"allergens": ["PEANUTS", "NUTS", "SULPHITES"],
+		"imageUri": "https://sevilla.abc.es/gurme/wp-content/uploads/2010/03/1256_ensaladatomatemozarellaalbahaca_1268558108.jpg",
+		"price": "7.45"
+	},
+	{
+		"nameES": "Potaje de cuchara de garbanzos",
+		"descriptionES": "con Espinacas al Aroma del Laurel",
+		"nameEN": "Chickpea Soup",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "ENTRANTES",
+		"productType": "FOOD",
+		"imageUri": "https://d36fw6y2wq3bat.cloudfront.net/assets/images/cache/recipes/potaje-rapido-de-garbanzos-y-espinacas/900/potaje-rapido-de-garbanzos-y-espinacas.jpg",
+		"price": "6.30"
+	},
+	{
+		"nameES": "Huevos estrellados",
+		"descriptionES": "con tiras de Jamón del País",
+		"nameEN": "Eggs & Serrano Ham",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "ENTRANTES",
+		"productType": "FOOD",
+		"allergens": ["EGGS"],
+		"imageUri": "http://recetas2.recetasfacil.com/recetas/huevos-rotos-jamon.jpg",
+		"price": "8.75"
+	},
+	{
+		"nameES": "Risoto cremoso de chipirones",
+		"descriptionES": "y Almejas en Costra de Parmesano",
+		"nameEN": "Rissotto",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "PASTA Y ARROCES",
+		"productType": "FOOD",
+		"price": "12.50",
+		"imageUri": "https://res.cloudinary.com/unaderecetas/image/upload/risotto-de-ceps-con-chipirones/risotto_ceps_base.jpg"
+	},
+	{
+		"nameES": "Spaguetti en salsa de 5 setas",
+		"descriptionES": "sinfonia de Champiñones, Girgola, Shirtake, Namico y Ceps",
+		"nameEN": "Spaguetti with mushroom sauce",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "PASTA Y ARROCES",
+		"productType": "FOOD",
+		"imageUri": "https://placeralplato.com/files/2014/03/3-setas-7.jpg",
+		"price": "9.00"
+	},
+	{
+		"nameES": "Tostada de cristal con escalivada",
+		"descriptionES": "y Anchoas de Cantábrico",
+		"nameEN": "Toast with roasted pepper salad",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "ENTRANTES",
+		"productType": "FOOD",
+		"imageUri": "https://img-global.cpcdn.com/recipes/517ab811bdc08cb2/751x532cq70/tostada-con-escalivada-hecha-al-horno-foto-principal.jpg",
+		"price": "11.10"
+	},
+	{
+		"nameES": "Parrillada de verduras a la brasa",
+		"descriptionES": "con Gratén de Queso de Cabra",
+		"nameEN": "Roasted vegetables",
+		"serviceBuilderLocation": "KITCHEN",
+		"category":"ENTRANTES",
+		"productType": "FOOD",
+		"imageUri": "http://www.larruzzbilbao.com/images/phocagallery/platos/thumbs/phoca_thumb_l_parrlla_verduras.jpg",
+		"price": "8.90"
+	},
+	{
+		"nameES": "Medallones de solomillo ibérico",
+		"descriptionES": "a la Crema de Cabrales y Patatas Paja",
+		"nameEN": "Iberic Sirloin",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "CARNES",
+		"productType": "FOOD",
+		"imageUri": "https://s-media-cache-ak0.pinimg.com/originals/9e/25/7a/9e257a1619f5e00d91d4a33014a9b79d.jpg",
+		"price": "14.00",
+		"optionGroups": [
+			{
+				"title": {
+					"defaultValue": "Punto de la carne",
+					"translations": {
+						"es": "Punto de la carne",
+						"ca": "Punt de la carn",
+						"en": "Meat point"
+					}
+				},
+				"type": "SINGLE",
+				"options": [
+					{
+						"title": {
+							"defaultValue": "Poco hecha",
+							"translations": {
+								"es": "Poco hecha",
+								"ca": "Poc feta",
+								"en": "Rare"
+							}
+						},
+						"basePrice": {
+							"amount": 0,
+							"currency": "EUR"
+						},
+						"tax": 0.1
+					},
+					{
+						"title": {
+							"defaultValue": "Al punto",
+							"translations": {
+								"es": "Al punto",
+								"ca": "Al punt",
+								"en": "Medium"
+							}
+						},
+						"basePrice": {
+							"amount": 0,
+							"currency": "EUR"
+						},
+						"tax": 0.1
+					},
+					{
+						"title": {
+							"defaultValue": "Muy hecha",
+							"translations": {
+								"es": "Muy hecha",
+								"ca": "Molt feta",
+								"en": "Well done"
+							}
+						},
+						"basePrice": {
+							"amount": 0,
+							"currency": "EUR"
+						},
+						"tax": 0.1
+					}
+				],
+				"required": true
+			}
+		]
+	},
+	{
+		"nameES": "Duo de hamburguesitas 100% de ternera",
+		"descriptionES": "a la Crema de Queso y Cebolla Caramelizada",
+		"nameEN": "Beef Hamburguers",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "CARNES",
+		"productType": "FOOD",
+		"imageUri": "https://i.pinimg.com/736x/a8/3c/08/a83c0874bfe2777904ebdde645db4385--mini-burgers-beef-burgers.jpg",
+		"price": "13.50"
+	},
+	{
+		"nameES": "Librito de pollo a la milanesa",
+		"descriptionES": "relleno de Jamón y Queso Cheddar",
+		"nameEN": "Milanese Chicken",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "CARNES",
+		"allergens": ["PEANUTS", "NUTS", "EGGS"],
+		"productType": "FOOD",
+		"imageUri": "https://i.ytimg.com/vi/bw3luk3tvr0/maxresdefault.jpg",
+		"price": "10.50"
+	},
+	{
+		"nameES": "Calamarcitos de anzuelo a la parrilla",
+		"descriptionES": "rellenos de Espinacas, Huevo Duro y Piñones",
+		"nameEN": "Roasted Squid",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "PESCADOS",
+		"productType": "FOOD",
+		"imageUri": "https://1.bp.blogspot.com/-4yCOEH4FR-s/WCmzRomLHKI/AAAAAAAAEDI/Kh0_pKkhjIYDK-8sWd0fnqtWjjX_itxQQCLcB/s1600/calamar%2Bplancha.png",
+		"price": "12.50"
+	},
+	{
+		"nameES": "Lomo de atún a la parrilla",
+		"descriptionES": "con Sésamo en Costra y Mermelada de Tomate",
+		"nameEN": "Roasted Tuna",
+		"serviceBuilderLocation": "KITCHEN",
+		"allergens": ["FISH"],
+		"category": "PESCADOS",
+		"productType": "FOOD",
+		"imageUri": "https://cocineroaficionado.files.wordpress.com/2012/10/atc3ban2.jpg",
+		"price": "16.00"
+	},
+	{
+		"nameES": "Carpaccio de salmón con guacamole",
+		"descriptionES": "de Aguacate y Cherry al Aceite de Cítricos",
+		"nameEN": "Salmon Carpaccio with Guacamole",
+		"serviceBuilderLocation": "KITCHEN",
+		"category":"PESCADOS",
+		"productType": "FOOD",
+		"imageUri": "https://estaticos.marie-claire.es/media/cache/680x_thumb/uploads/images/recipe/55f19e99a13439ed2c494b48/carpacio-aguacate.jpg",
+		"price": "14.50"
+	},
+	{
+		"nameES": "Fritura de Cádiz a la Andaluza",
+		"descriptionES": "de Boquerones, Calamares y Chipirones",
+		"nameEN": "Andalusian Frieds",
+		"serviceBuilderLocation": "KITCHEN",
+		"allergens": ["PEANUTS", "NUTS", "SULPHITES"],
+		"category": "PESCADOS",
+		"productType": "FOOD",
+		"price": "17.00",
+		"imageUri" : "https://i.pinimg.com/originals/c0/64/e7/c064e75396f060601b2f909714665682.jpg"
+	},
+	{
+		"nameES": "Timbal de escalivada con ventresca de atún",
+		"descriptionES": "Con una Vinagreta de Genjibre y Piñones",
+		"nameEN": "Tuna with roasted pepper salad",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "ENTRANTES",
+		"productType": "FOOD",
+		"imageUri": "https://live.staticflickr.com/2456/3766007608_2c6bab9279_b.jpg",
+		"price": "17.00"
+	},
+	{
+		"nameES": "Tortilla de gambas y calabacín",
+		"descriptionES": "con Pan de Coca con Tomate",
+		"nameEN": "Prawn Omelette",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "ENTRANTES",
+		"productType": "FOOD",
+		"allergens": ["EGGS"],
+		"imageUri": "https://lachefa.files.wordpress.com/2014/08/tortilla-de-gambas-champic3b1ones-y-calabacc3adn2.png",
+		"price": "8.90"
+	},
+	{
+		"nameES": "Canelones de espinacas a la catalana",
+		"descriptionES": "Gratinados a La Bechamel de Queso de Cabra",
+		"nameEN": "Catalan Spinach Canelonni",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "PASTA Y ARROCES",
+		"productType": "FOOD",
+		"imageUri": "https://i.pinimg.com/736x/c2/71/ea/c271eaa463ef9cbacb5ab6cb9263de13--pizza.jpg",
+		"price": "11.30"
+	},
+	{
+		"nameES": "Risotto portofino con almejas y chipirones",
+		"descriptionES": "Gratinados a La Bechamel de Queso de Cabra",
+		"nameEN": "Oyster Risotto",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "PASTA Y ARROCES",
+		"productType": "FOOD",
+		"imageUri": "https://i.pinimg.com/736x/40/82/0a/40820a2c0966c6f274a72c273b85ab34--polenta.jpg",
+		"price": "13.70"
+	},
+	{
+		"nameES": "Cazuela de garbanzos estofados",
+		"descriptionES": "con Alcachofas y Langostinos",
+		"nameEN": "Chickpea Soup",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "ENTRANTES",
+		"productType": "FOOD",
+		"imageUri": "https://i1.wp.com/lh3.googleusercontent.com/-YiP8h5ZmIlE/UVcWgKtXwzI/AAAAAAAAJIs/rpmGfNqUAu8/s500/Moroccan%2520Chickpea%2520Soup13.JPG?resize=500%2C400&ssl=1",
+		"price": "9.50"
+	},
+	{
+		"nameES": "Spaguettini de huevo al ragu de ternera",
+		"descriptionES": "con Virutas de Foie",
+		"nameEN": "Spaguettini Ragu",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "PASTA Y ARROCES",
+		"productType": "FOOD",
+		"allergens": ["EGGS"],
+		"imageUri": "https://t2.rg.ltmcdn.com/es/images/2/3/3/img_espaguetis_con_salsa_ragu_38332_600.jpg",
+		"price": "12.50"
+	},
+	{
+		"nameES": "Mini paella de fideuá",
+		"descriptionES": "con Sepia, Almejas y Pulpo",
+		"nameEN": "Fideua paella",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "PASTA Y ARROCES",
+		"productType": "FOOD",
+		"imageUri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvAoD1k3KP_O9j3DHVn12jG_aE9S_lmSWAnBJAB0Hd5_tLRjkHhQ",
+		"price": "17.90"
+	},
+	{
+		"nameES": "Ensalada toscana con bacon y pollo",
+		"descriptionES": "y gorgonzola a la Vinagreta de Módena con Romero y Sésamo",
+		"nameEN": "Bacon and Chicken salad",
+		"serviceBuilderLocation": "KITCHEN",
+		"category":  "ENTRANTES",
+		"productType": "FOOD",
+		"imageUri": "http://3.bp.blogspot.com/-2JArWhFO_YI/UFortgu0UDI/AAAAAAAAErI/7Ul4-_eq628/s400/SDC12122.JPG",
+		"price": "12.50"
+	},
+	{
+		"nameES": "Hamburguesa de ternera de Barcelona",
+		"descriptionES": "Con Huevo Frito, Topping de Queso, Bacon, Mostaza y Ketchup",
+		"nameEN": "Beef Burger",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "CARNES",
+		"productType": "FOOD",
+		"imageUri": "https://media-cdn.tripadvisor.com/media/photo-s/1a/35/31/a2/hamburguesa-baconcheese.jpg",
+		"price": "10.00"
+	},
+	{
+		"nameES": "Wok de tiras de sepia salteadas",
+		"descriptionES": "con VerdimageUritas y Soja Caramelizada",
+		"nameEN": "Wok with Squid",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "PESCADOS",
+		"productType": "FOOD",
+		"imageUri": "https://s-media-cache-ak0.pinimg.com/originals/75/be/c2/75bec2c4b542d654d4a0d0771163f8fe.jpg",
+		"price": "11.50"
+	},
+	{
+		"nameES": "Pochas con almejas cocidas",
+		"descriptionES": "a fuego lento como las Tradicionales",
+		"nameEN": "Boiled Oysters",
+		"descriptionEN": "con Cherry, Membrillo, Frutos Secos y Vinagreta",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "PESCADOS",
+		"productType": "FOOD",
+		"imageUri": "https://brightcove04pmdo-a.akamaihd.net/2385340627001/2385340627001_5124501733001_5124485556001-vs.jpg?pubId=2385340627001&videoId=5124485556001",
+		"price": "13.50"
+	},
+	{
+		"nameES": "Calamarcitos rellenos de gambas",
+		"descriptionES": "y verdimageUritas con Salsa para Rebañar",
+		"nameEN": "Prawn filled Squid",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "PESCADOS",
+		"productType": "FOOD",
+		"imageUri": "http://www.recetas-italianas.com/wp-content/uploads/2015/10/calamaresgambas.jpg",
+		"price": "15.50"
+	},
+	{
+		"nameES": "Lasaña clásica de carne con queso",
+		"descriptionES": "provolone gratinada al Horno con su Bechamel",
+		"nameEN": "Classic Lassagna",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "PASTA Y ARROCES",
+		"productType": "FOOD",
+		"imageUri": "https://s-media-cache-ak0.pinimg.com/originals/59/ee/65/59ee650b059136fc3dab30d0d6f009f5.jpg",
+		"price": "12.50"
+	},
+	{
+		"nameES": "Brownie casero",
+		"descriptionES": "con helado de Vainill y frutos del bosque",
+		"nameEN": "Homemade Brownie",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "POSTRES",
+		"productType": "FOOD",
+		"imageUri": "https://unareceta.com/wp-content/uploads/2015/07/brownie-con-helado-640x425.jpg",
+		"price": "4.50"
+	},
+	{
+		"nameES": "Macedonia de frutas",
+		"nameEN": "Fruit salad",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "POSTRES",
+		"productType": "FOOD",
+		"imageUri": "http://diariodegastronomia.com/wp-content/uploads/2017/05/Macedonia-de-frutas.jpg",
+		"price": "5.50"
+	},
+	{
+		"nameES": "Copa de helado",
+		"nameEN": "Ice Cream",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "POSTRES",
+		"productType": "FOOD",
+		"imageUri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqN9yE5r8l6Rl2NluU-d1oKW3zMlh1nbyi1qwZKANl_B4J-GkE",
+		"price": "5.50"
+	},
+	{
+		"nameES": "Tarta tatín",
+		"nameEN": "Cherry Cake",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "POSTRES",
+		"productType": "FOOD",
+		"imageUri": "https://www.hogarmania.com/archivos/201105/0612-tarta-tatin-de-manzana-con-natillas-de-cardamomo-xl-668x400x80xX.jpg",
+		"price": "4.50"
+	},
+	{
+		"nameES": "Afortunado",
+		"descriptionES": "D.O. Rueda, Verdejo",
+		"nameEN": "Afortunado",
+		"serviceBuilderLocation": "BAR",
+		"category": "VINOS",
+		"productType": "DRINK",
+		"imageUri": "https://www.compra-vino.com/1856-thickbox_default/afortunado.jpg",
+		"price": "7"
+	},
+	{
+		"nameES": "Prado Rey",
+		"descriptionES": "D.O. Ribera del Duero",
+		"nameEN": "Prado Rey",
+		"serviceBuilderLocation": "BAR",
+		"category": "VINOS",
+		"productType": "DRINK",
+		"imageUri": "https://media-verticommnetwork1.netdna-ssl.com/wines/prado-rey-crianza-1534368-s500.jpg",
+		"price": "9.50"
+	},
+	{
+		"nameES": "Luis Cañas",
+		"descriptionES": "D.O. Rioja Joven",
+		"nameEN": "Luis Cañas",
+		"serviceBuilderLocation": "BAR",
+		"category": "VINOS",
+		"productType": "DRINK",
+		"imageUri": "https://cdn.shopify.com/s/files/1/0688/2893/products/Buy-Bodegas-Luis-Canas-Gran-Reserva-Rioja_1024x1024.jpg?v=1571439927",
+		"price": "9"
+	},
+	{
+		"nameES": "Ramón Bilbao",
+		"descriptionES": "D.O. Rioja Alta",
+		"nameEN": "Ramón Bilbao",
+		"serviceBuilderLocation": "BAR",
+		"category": "VINOS",
+		"productType": "DRINK",
+		"imageUri": "https://www.licorea.com/images/magictoolbox_cache/feabb61ae2a71c1844359f7cbe8b5d82/3/7/3719/original/1838841095/ramon_bilbao_crianza_5l.jpg",
+		"price": "10.50"
+	},
+	{
+		"nameES": "Pago de capellanes",
+		"descriptionES": "D.O. Ribera del Duero Joven",
+		"nameEN": "Pago de capellanes",
+		"serviceBuilderLocation": "BAR",
+		"category": "VINOS",
+		"productType": "DRINK",
+		"imageUri": "https://www.bodega-privada.com/1595-large_default/pago-de-los-capellanes-reserva.jpg",
+		"price": "14.00"
+	},
+	{
+		"nameES": "Martini",
+		"serviceBuilderLocation": "BAR",
+		"nameEN": "Martini",
+		"category": "COPAS",
+		"productType": "DRINK",
+		"imageUri": "https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2017/11/dirty-martini.jpg",
+		"price": "5"
+	},
+	{
+		"nameES": "Caña (Tirador)",
+		"descriptionES": "Hasta hoy, Estrella Damm se elabora utilizando aquella receta original de 1876 resultado de la combinación de malta de cebada, arroz y lúpulo, 100% ingredientes naturales, sin aditivos ni conservantes.",
+		"nameEN": "Draught Beer",
+		"serviceBuilderLocation": "BAR",
+		"category": "BEBIDAS",
+		"productType": "DRINK",
+		"allergens": ["GLUTEN"],
+		"imageUri": "https://www.cristalymenajeonline.com/153-large_default/vaso-cana-20-cl-12ud.jpg",
+		"price": "1.50"
+	},
+	{
+		"nameES": "Estrella Damm (33cl)",
+		"descriptionES": "Hasta hoy, Estrella Damm se elabora utilizando aquella receta original de 1876 resultado de la combinación de malta de cebada, arroz y lúpulo, 100% ingredientes naturales, sin aditivos ni conservantes.",
+		"nameEN": "Estrella Damm (33cl)",
+		"serviceBuilderLocation": "BAR",
+		"category": "BEBIDAS",
+		"productType": "DRINK",
+		"allergens": ["GLUTEN"],
+		"imageUri": "https://www.compraonline.bonpreuesclat.cat/images-v2/dcbcfd72-cf23-44a2-8e14-8a38edd645a3/d57f6327-ce67-44d5-bdd5-dc63e98460a6/60ebcab2-56f4-4d5b-95fd-a36c86416954/db9e5d86-74a1-4985-baa0-61543fe98682/500x500.jpg",
+		"price": "2.50"
+	},
+	{
+		"nameES": "Estrella Damm (25cl)",
+		"descriptionES": "Hasta hoy, Estrella Damm se elabora utilizando aquella receta original de 1876 resultado de la combinación de malta de cebada, arroz y lúpulo, 100% ingredientes naturales, sin aditivos ni conservantes.",
+		"nameEN": "Estrella Damm (25cl)",
+		"serviceBuilderLocation": "BAR",
+		"category":"BEBIDAS",
+		"productType": "DRINK",
+		"allergens": ["GLUTEN"],
+		"imageUri": "https://www.compraonline.bonpreuesclat.cat/images-v2/dcbcfd72-cf23-44a2-8e14-8a38edd645a3/d57f6327-ce67-44d5-bdd5-dc63e98460a6/89ddab19-b4d8-4483-9d5c-ce29869ef042/cd24de2d-feca-41dc-9c16-13cee3f25243/500x500.jpg",
+		"price": "2"
+	},
+	{
+		"nameES": "Estrella Damm Daura",
+		"descriptionES" : "La cerveza sin gluten más premiada del mundo. Daura fue lanzada en 2006. Desde entonces ha recibido numerosos premios de prestigiosos certámenes internacionales, siendo reconocida como la mejor cerveza sin gluten.",
+		"nameEN": "Estrella Damm Daura",
+		"serviceBuilderLocation": "BAR",
+		"category": "BEBIDAS",
+		"productType": "DRINK",
+		"price": "2",
+		"imageUri" : "https://www.compraonline.bonpreuesclat.cat/images-v2/dcbcfd72-cf23-44a2-8e14-8a38edd645a3/d57f6327-ce67-44d5-bdd5-dc63e98460a6/842e8fe8-86e0-413b-98a6-416da5b9943c/ca438164-e16f-4813-a8bb-77bf2897b5a1/500x500.jpg"
+	},
+	{
+		"nameES": "Estrella Damm Daura Marzen",
+		"descriptionES" : "La cerveza sin gluten más premiada del mundo. Daura fue lanzada en 2006. Desde entonces ha recibido numerosos premios de prestigiosos certámenes internacionales, siendo reconocida como la mejor cerveza sin gluten.",
+		"nameEN": "Estrella Damm Daura Marzen",
+		"serviceBuilderLocation": "BAR",
+		"category": "BEBIDAS",
+		"productType": "DRINK",
+		"price": "2",
+		"imageUri" : "https://www.compraonline.bonpreuesclat.cat/images-v2/dcbcfd72-cf23-44a2-8e14-8a38edd645a3/d57f6327-ce67-44d5-bdd5-dc63e98460a6/9fbd1f77-5a80-42d7-9c17-44dd1065577e/e66aa3f0-0bb9-4bc7-8ed6-6ed197dada78/500x500.jpg"
+	},
+	{
+		"nameES": "Damm Lemon",
+		"descriptionES" : "6 partes de cerveza mediterránea de malta, arroz y lúpulo por 4partes de limón con un toque de lima. El carbónico para conseguir el punto de gas siempre perfecto proviene de la propia fermentación de la cerveza. ",
+		"nameEN": "Damm Lemon",
+		"serviceBuilderLocation": "BAR",
+		"category": "BEBIDAS",
+		"productType": "DRINK",
+		"price": "2",
+		"allergens": ["GLUTEN"],
+		"imageUri" : "https://www.compraonline.bonpreuesclat.cat/images-v2/dcbcfd72-cf23-44a2-8e14-8a38edd645a3/d57f6327-ce67-44d5-bdd5-dc63e98460a6/dbfea518-7c3a-43f9-bb74-7cdf1132e634/3d993e07-5535-4aa6-b215-a595612e9f5e/500x500.jpg"
+	},
+	{
+		"nameES": "Free Damm ",
+		"descriptionES" : "Color ámbar transparente, con ribetes dorados y espuma ligera. Limpia y brillante. Burbujas con largo recorrido y finas. Aroma limpio e intenso con protagonismo del lúpulo y la sensación fresca de notas de flor blanca.",
+		"nameEN": "Alcohol Free Damm",
+		"serviceBuilderLocation": "BAR",
+		"category": "BEBIDAS",
+		"productType": "DRINK",
+		"price": "1.50",
+		"allergens": ["GLUTEN"],
+		"imageUri" : "https://www.compraonline.bonpreuesclat.cat/images-v2/dcbcfd72-cf23-44a2-8e14-8a38edd645a3/d57f6327-ce67-44d5-bdd5-dc63e98460a6/774a2ef6-3950-4b62-81a8-e2c61ac1685e/139281d4-61e4-4f98-9a4c-26bd1dacd9aa/500x500.jpg"
+	},
+	{
+		"nameES": "Free Damm (Tostada)",
+		"descriptionES" : "Color ámbar transparente, con ribetes dorados y espuma ligera. Limpia y brillante. Burbujas con largo recorrido y finas. Aroma limpio e intenso con protagonismo del lúpulo y la sensación fresca de notas de flor blanca.",
+		"nameEN": "Alcohol Free Damm (Toasted)",
+		"serviceBuilderLocation": "BAR",
+		"category": "BEBIDAS",
+		"productType": "DRINK",
+		"price": "1.50",
+		"allergens": ["GLUTEN"],
+		"imageUri" : "https://www.compraonline.bonpreuesclat.cat/images-v2/dcbcfd72-cf23-44a2-8e14-8a38edd645a3/d57f6327-ce67-44d5-bdd5-dc63e98460a6/67328bac-57bf-4162-9a25-908e3a5d49ff/65dee3ce-c748-4f02-8b35-87097ff981c6/500x500.jpg"
+	},
+	{
+		"nameES": "Voll Damm (33cl)",
+		"serviceBuilderLocation": "BAR",
+		"nameEN": "Voll Damm (33cl)",
+		"category": "BEBIDAS",
+		"productType": "DRINK",
+		"price": "2.50",
+		"allergens": ["GLUTEN"],
+		"imageUri" : "https://www.compraonline.bonpreuesclat.cat/images-v2/dcbcfd72-cf23-44a2-8e14-8a38edd645a3/d57f6327-ce67-44d5-bdd5-dc63e98460a6/0e427db5-5bf9-4c3e-bb9e-513559f7a1d5/5abd7ce9-0a49-4248-8f2a-fee4857a8f50/500x500.jpg"
+	},
+	{
+		"nameES": "Voll Damm (25cl)",
+		"serviceBuilderLocation": "BAR",
+		"nameEN": "Voll Damm (25cl)",
+		"category": "BEBIDAS",
+		"productType": "DRINK",
+		"price": "2.50",
+		"allergens": ["GLUTEN"],
+		"imageUri" : "https://www.compraonline.bonpreuesclat.cat/images-v2/dcbcfd72-cf23-44a2-8e14-8a38edd645a3/d57f6327-ce67-44d5-bdd5-dc63e98460a6/20faf270-0ee4-4532-8d5e-da2a9734d8b1/5f546255-93e4-4d0a-b966-bc03f56891a3/500x500.jpg"
+	},
+	{
+		"nameES": "Agua Veri (1.5l)",
+		"nameEN": "Veri Still Water",
+		"serviceBuilderLocation": "BAR",
+		"category": "BEBIDAS",
+		"productType": "DRINK",
+		"imageUri": "https://www.compraonline.bonpreuesclat.cat/images-v2/dcbcfd72-cf23-44a2-8e14-8a38edd645a3/d57f6327-ce67-44d5-bdd5-dc63e98460a6/42855084-0853-4644-84f2-402c81e48f4f/0e6d74d2-4c04-444c-aea8-127006985413/500x500.jpg",
+		"price": "1.50"
+	},
+	{
+		"nameES": "Cacaolat",
+		"nameEN": "Cacaolat",
+		"serviceBuilderLocation": "BAR",
+		"category": "BEBIDAS",
+		"productType": "DRINK",
+		"allergens": ["DAIRY_PRODUCTS"],
+		"imageUri": "https://res.cloudinary.com/tienda-com/image/upload/f_auto,q_auto:good,w_626/products/m-bv-38-4.jpg",
+		"price": "1.50"
+	},
+	{
+		"nameES": "Coca-cola",
+		"nameEN": "Coca-cola",
+		"serviceBuilderLocation": "BAR",
+		"category": "BEBIDAS",
+		"productType": "DRINK",
+		"imageUri": "https://www.compraonline.bonpreuesclat.cat/images-v2/dcbcfd72-cf23-44a2-8e14-8a38edd645a3/d57f6327-ce67-44d5-bdd5-dc63e98460a6/99648e5a-d259-49bb-a805-c121cfadca59/c79c0842-b258-49a5-b540-76097c9b4c28/500x500.jpg",
+		"price": "2"
+	},
+	{
+		"nameES": "Fanta de Limón",
+		"nameEN": "Fanta Lemonade",
+		"serviceBuilderLocation": "BAR",
+		"category": "BEBIDAS",
+		"productType": "DRINK",
+		"imageUri": "https://www.compraonline.bonpreuesclat.cat/images-v2/dcbcfd72-cf23-44a2-8e14-8a38edd645a3/d57f6327-ce67-44d5-bdd5-dc63e98460a6/df358203-5515-4355-a088-d05041d53a66/617d9c38-3605-4317-a986-76dbf5a70b92/500x500.jpg",
+		"price": "2"
+	},
+	{
+		"nameES": "Aquarius de limón",
+		"nameEN": "Lemon Aquarius",
+		"serviceBuilderLocation": "BAR",
+		"category": "BEBIDAS",
+		"productType": "DRINK",
+		"price": "1.5",
+		"imageUri" : "https://www.compraonline.bonpreuesclat.cat/images-v2/dcbcfd72-cf23-44a2-8e14-8a38edd645a3/d57f6327-ce67-44d5-bdd5-dc63e98460a6/4b860f00-cffa-4654-840e-71d63b2ab1ec/07b4ecff-2dc8-45fa-95cb-bba84c73eea1/500x500.jpg"
+	},
+	{
+		"nameES": "Aquarius de naranja",
+		"nameEN": "Orange Aquarius",
+		"serviceBuilderLocation": "BAR",
+		"category": "BEBIDAS",
+		"productType": "DRINK",
+		"price": "1.5",
+		"imageUri" : "https://www.compraonline.bonpreuesclat.cat/images-v2/dcbcfd72-cf23-44a2-8e14-8a38edd645a3/d57f6327-ce67-44d5-bdd5-dc63e98460a6/9b31a51b-923b-4c2f-8786-699a85665772/bd864a27-858c-405b-a26e-ae52b9b7a88a/500x500.jpg"
+	},
+	{
+		"nameES": "Sprite",
+		"nameEN": "Sprite",
+		"serviceBuilderLocation": "BAR",
+		"category": "BEBIDAS",
+		"productType": "DRINK",
+		"imageUri": "https://www.compraonline.bonpreuesclat.cat/images-v2/dcbcfd72-cf23-44a2-8e14-8a38edd645a3/d57f6327-ce67-44d5-bdd5-dc63e98460a6/438a6281-1b8d-4523-9464-e85e1d5979b7/43891dd3-508a-4787-afaa-59ed7cf02b17/500x500.jpg",
+		"price": "2"
+	},
+	{
+		"nameES": "Zumo de naranja",
+		"nameEN": "Orange Juice",
+		"serviceBuilderLocation": "BAR",
+		"category": "BEBIDAS",
+		"productType": "DRINK",
+		"imageUri": "https://www.compraonline.bonpreuesclat.cat/images-v2/dcbcfd72-cf23-44a2-8e14-8a38edd645a3/d57f6327-ce67-44d5-bdd5-dc63e98460a6/3e9df693-6548-45a2-903f-bc6105bdf676/aaa48935-776f-4888-9e09-9b3a62a5cd47/500x500.jpg",
+		"price": "1.50"
+	},
+	{
+		"nameES": "Gin Tonic",
+		"nameEN": "Gin & Tonic",
+		"serviceBuilderLocation": "BAR",
+		"category": "COPAS",
+		"productType": "DRINK",
+		"price": "6.00",
+		"imageUri": "https://img.edilportale.com/product-thumbs/b_vintage-gin-tonic-nude-glass-359581-rel467797d2.jpg",
+		"optionGroups": [
+			{
+				"title": {
+					"defaultValue": "¿Qué ginebra quiere?",
+					"translations": {
+						"es": "¿Qué ginebra quiere?",
+						"ca": "Quina ginebra vol?",
+						"en": "What Gin?"
+					}
+				},
+				"type": "SINGLE",
+				"options": [
+					{
+						"title": {
+							"defaultValue": "Beefeater",
+							"translations": {
+								"es": "Beefeater"
+							}
+						},
+						"basePrice": {
+							"amount": 0,
+							"currency": "EUR"
+						},
+						"tax": 0.1
+					},
+					{
+						"title": {
+							"defaultValue": "Bombay Saphire",
+							"translations": {
+								"es": "Bombay Saphire"
+							}
+						},
+						"basePrice": {
+							"amount": 1,
+							"currency": "EUR"
+						},
+						"tax": 0.1
+					},
+					{
+						"title": {
+							"defaultValue": "Hendricks",
+							"translations": {
+								"es": "Hendricks"
+							}
+						},
+						"basePrice": {
+							"amount": 2,
+							"currency": "EUR"
+						},
+						"tax": 0.1
+					}
+				],
+				"required": true
+			},
+			{
+				"title": {
+					"defaultValue": "Extras",
+					"translations": {
+						"es": "Extras"
+					}
+				},
+				"type": "MULTI",
+				"options": [
+					{
+						"title": {
+							"defaultValue": "Tónica premium",
+							"translations": {
+								"es": "Tónica premium"
+							}
+						},
+						"basePrice": {
+							"amount": 1.5,
+							"currency": "EUR"
+						},
+						"tax": 0.1
+					},
+					{
+						"title": {
+							"defaultValue": "Pimienta",
+							"translations": {
+								"es": "Pimienta"
+							}
+						},
+						"basePrice": {
+							"amount": 0,
+							"currency": "EUR"
+						},
+						"tax": 0.1
+					},
+					{
+						"title": {
+							"defaultValue": "Limón",
+							"translations": {
+								"es": "Limón"
+							}
+						},
+						"basePrice": {
+							"amount": 0,
+							"currency": "EUR"
+						},
+						"tax": 0.1
+					}
+				],
+				"required": true
+			}
+		]
+	},
+	{
+		"nameES": "Whisky",
+		"nameEN": "Whisky",
+		"serviceBuilderLocation": "BAR",
+		"category": "COPAS",
+		"productType": "DRINK",
+		"imageUri": "https://image.made-in-china.com/202f0j00eNBadDrFShgJ/Square-Whisky-Glass-Whisky-Cup-Customize-Shot-Tumbler-Shot-Glass.jpg",
+		"price": "7.50"
+	},
+	{
+		"nameES": "Copa de Vino blanco",
+		"descriptionES": "Afortunado o Menganito",
+		"nameEN": "White wine",
+		"serviceBuilderLocation": "BAR",
+		"category":"VINOS",
+		"productType": "DRINK",
+		"imageUri": "https://www.accesoriosdecaravaning.com/13166-thickbox_default/copa-vino-blanco-andalucia-camp4-pack-2-uds.jpg",
+		"price": "3.00"
+	},
+	{
+		"nameES": "Copa de vino tinto",
+		"descriptionES": "Prado Rey o Luis Cañas",
+		"nameEN": "Red wine",
+		"serviceBuilderLocation": "BAR",
+		"category": "VINOS",
+		"productType": "DRINK",
+		"imageUri": "https://vivancoculturadevino.es/blog/wp-content/uploads/2016/03/COPA-VINO-TINTO.jpg",
+		"price": "3.00"
+	},
+	{
+		"nameES": "Desayuno normal",
+		"descriptionES": "Pulguita, zumo pequeño y café",
+		"nameEN": "Small Breakfast",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "DESAYUNOS",
+		"productType": "FOOD",
+		"allergens": ["DAIRY_PRODUCTS"],
+		"imageUri": "https://www.finut.org/wp-content/uploads/2019/04/Desayuno-copia-1024x685.jpg",
+		"price": "3.00"
+	},
+	{
+		"nameES": "Desayuno dulce",
+		"descriptionES": "Bollo y café",
+		"nameEN": "Sweet Breakfast",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "DESAYUNOS",
+		"productType": "FOOD",
+		"allergens": ["DAIRY_PRODUCTS"],
+		"imageUri": "https://estaticos.muyinteresante.es/media/cache/760x570_thumb/uploads/images/article/5a2511be5cafe816559dbc06/desayuno_0.jpg",
+		"price": "3.00"
+	},
+	{
+		"nameES": "Brunch continental",
+		"descriptionES": "Vol de fruta, bollo, pan y mantequilla, zumo y café",
+		"nameEN": "Brunch",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "DESAYUNOS",
+		"productType": "FOOD",
+		"imageUri": "https://estaticos.muyinteresante.es/media/cache/760x570_thumb/uploads/images/article/5a2511be5cafe816559dbc06/desayuno_0.jpg",
+		"price": "9.50"
+	},
+	{
+		"nameES": "Patatas bravas",
+		"descriptionES": "Con una deliciosa salsa brava de la casa",
+		"nameEN": "Bravas",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "TAPAS",
+		"productType": "FOOD",
+		"imageUri": "https://s5.eestatic.com/2019/09/11/cocinillas/recetas/aperitivos-y-entrantes/Videorreceta-Patatas-Salsa-Tomate-Aperitivos_y_entrantes_428468132_134365388_1024x576.jpg",
+		"price": "4.50"
+	},
+	{
+		"nameES": "Sevillanos",
+		"nameEN": "Sevillanos",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "TAPAS",
+		"productType": "FOOD",
+		"allergens": ["FISH"],
+		"imageUri": "https://sevilla.abc.es/gurme/wp-content/uploads/sites/24/2017/01/juan3.jpg",
+		"price": "4"
+	},
+	{
+		"nameES": "Boquerones en vinagre",
+		"nameEN": "Anchovies with vinegar",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "TAPAS",
+		"productType": "FOOD",
+		"allergens": ["FISH"],
+		"imageUri": "https://www.divinacocina.es/wp-content/uploads/boquerones-en-vinagre.jpg",
+		"price": "6"
+	},
+	{
+		"nameES": "Bombas",
+		"nameEN": "Croquettes",
+		"serviceBuilderLocation": "KITCHEN",
+		"category": "TAPAS",
+		"productType": "FOOD",
+		"imageUri": "https://www.westjetmagazine.com/wp-content/uploads/2019/03/FEAST-03-19-BOMBAS.jpg",
+		"price": "4"
+	},
+	{
+		"nameES": "Café",
+		"nameEN": "Coffee",
+		"serviceBuilderLocation": "BAR",
+		"category": "BEBIDAS",
+		"productType": "DRINK",
+		"price": "1.00",
+		"imageUri": "https://upload.wikimedia.org/wikipedia/commons/8/89/Caf%C3%A9_con_leche.jpg",
+		"optionGroups": [
+			{
+				"title": {
+					"defaultValue": "Tipo de café",
+					"translations": {
+						"es": "Tipo de café",
+						"ca": "Tipus de café",
+						"en": "Type"
+					}
+				},
+				"type": "SINGLE",
+				"options": [
+					{
+						"title": {
+							"defaultValue": "Espresso",
+							"translations": {
+								"es": "Espresso",
+								"ca": "Espresso",
+								"en": "Espresso"
+							}
+						},
+						"basePrice": {
+							"amount": 0,
+							"currency": "EUR"
+						},
+						"tax": 0.1
+					},
+					{
+						"title": {
+							"defaultValue": "Cortado",
+							"translations": {
+								"es": "Cortado",
+								"ca": "Tallat",
+								"en": "Cut"
+							}
+						},
+						"basePrice": {
+							"amount": 0,
+							"currency": "EUR"
+						},
+						"tax": 0.1
+					},
+					{
+						"title": {
+							"defaultValue": "Irlandés",
+							"translations": {
+								"es": "Irlandés",
+								"ca": "Irlandès",
+								"en": "Irish"
+							}
+						},
+						"basePrice": {
+							"amount": 1.5,
+							"currency": "EUR"
+						},
+						"tax": 0.1
+					},
+					{
+						"title": {
+							"defaultValue": "Barraquito",
+							"translations": {
+								"es": "Barraquito",
+								"ca": "Barraquito",
+								"en": "Barraquito"
+							}
+						},
+						"basePrice": {
+							"amount": 0,
+							"currency": "EUR"
+						},
+						"tax": 0.1
+					},
+					{
+						"title": {
+							"defaultValue": "Bombón",
+							"translations": {
+								"es": "Bombón",
+								"ca": "Bombón",
+								"en": "Bombón"
+							}
+						},
+						"basePrice": {
+							"amount": 0,
+							"currency": "EUR"
+						},
+						"tax": 0.1
+					},
+					{
+						"title": {
+							"defaultValue": "Descafeinado",
+							"translations": {
+								"es": "Descafeinado",
+								"ca": "Descafeinado",
+								"en": "Descafeinado"
+							}
+						},
+						"basePrice": {
+							"amount": 0,
+							"currency": "EUR"
+						},
+						"tax": 0.1
+					}
+				],
+				"required": true
+			}
+		]
+	}
+]

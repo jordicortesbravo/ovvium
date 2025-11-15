@@ -1,0 +1,12 @@
+package com.ovvium.services.web.controller.bff.v1.transfer.request.account;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+public class RefreshRequest {
+
+	private String refreshToken;
+
+}

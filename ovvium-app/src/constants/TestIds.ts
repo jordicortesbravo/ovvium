@@ -1,0 +1,9 @@
+export const ONBOARDING_NEXT = "onboarding-next-button";
+export const ONBOARDING_BACK = "onboarding-back-button";
+export const ONBOARDING_DONE = "onboarding-done-button";
+export const LOGIN_INPUT_USERNAME = "login-input-username";
+export const LOGIN_INPUT_PASSWORD = "login-input-password";
+export const LOGIN_BUTTON = "login-button";
+export const LOGIN_SOCIAL_BUTTON_APPLE = "login-social-button-apple";
+export const LOGIN_SOCIAL_BUTTON_GOOGLE = "login-social-button-apple";
+export const LOGIN_SOCIAL_BUTTON_FACEBOOK = "login-social-button-apple";

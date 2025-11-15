@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+		xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+	<changeSet id="create_schema" author="jpadilla">
+		<sql>
+			CREATE SEQUENCE "ovvium_sequence"
+				START WITH 1
+				INCREMENT BY 1
+				MINVALUE 1
+				NO MAXVALUE;
+
+
+			CREATE TABLE "picture" (
+				"surrogate_id" bigint PRIMARY KEY DEFAULT nextval('ovvium_sequence'),
+				"id" uuid NOT NULL,
+				"base_uri" varchar(500) NOT NULL,
+				"filename" varchar(500) NOT NULL,
+				"created" timestamp without time zone NOT NULL,
+				"updated" timestamp without time zone NOT NULL,
+				UNIQUE("id")
+			);
+
+			CREATE TABLE "customer" (
+				"surrogate_id" bigint PRIMARY KEY DEFAULT nextval('ovvium_sequence'),
+				"id" uuid NOT NULL,
+				"address" varchar(255) NOT NULL,
+				"cif" varchar(255) NOT NULL,
+				"description" varchar(500) NOT NULL,
+				"latitude" varchar(255),
+				"longitude" varchar(255),
+				"time_zone" varchar(150),
+				"name" varchar(255) NOT NULL,
+				"pci_split_user_id" varchar(255) NOT NULL,
+				"commission_config" varchar(1000) NOT NULL,
+				"phones" varchar(255),
+				"website" varchar(255),
+				"invoice_number_prefix" varchar(4) NOT NULL,
+				"picture_surrogate_id" bigint REFERENCES "picture"("surrogate_id"),
+				"created" timestamp without time zone NOT NULL,
+				"updated" timestamp without time zone NOT NULL,
+				UNIQUE("id")
+			);
+
+			CREATE TABLE "employee" (
+				"surrogate_id" bigint PRIMARY KEY DEFAULT nextval('ovvium_sequence'),
+				"id" uuid NOT NULL,
+				"name" varchar(255) NOT NULL,
+				"access_code" char(4) NOT NULL,
+				"employee_customer_id" bigint REFERENCES "customer"("surrogate_id"),
+				"created" timestamp without time zone NOT NULL,
+				"updated" timestamp without time zone NOT NULL,
+				UNIQUE("id"),
+				UNIQUE("employee_customer_id","access_code")
+			);
+
+			CREATE TABLE "user" (
+				"surrogate_id" bigint PRIMARY KEY DEFAULT nextval('ovvium_sequence'),
+				"id" uuid NOT NULL,
+				"allergens" varchar(500),
+				"email" varchar(255) NOT NULL,
+				"enabled" boolean NOT NULL DEFAULT false,
+				"facebook_email" varchar(255),
+				"facebook_profile_name" varchar(255),
+				"facebook_profile_id" varchar(255),
+				"food_preferences" varchar(255),
+				"google_profile_email" varchar(255),
+				"google_profile_name" varchar(255),
+				"google_profile_id" varchar(255),
+				"apple_profile_email" varchar(255),
+				"apple_profile_name" varchar(255),
+				"apple_profile_id" varchar(255),
+				"name" varchar(255) NOT NULL,
+				"password" varchar(255),
+				"roles" varchar(500),
+				"picture_surrogate_id" bigint REFERENCES "picture"("surrogate_id"),
+				"user_customer_id" bigint REFERENCES "customer"("surrogate_id"),
+				"created" timestamp without time zone NOT NULL,
+				"updated" timestamp without time zone NOT NULL,
+				UNIQUE("id"),
+				UNIQUE("email"),
+				UNIQUE("facebook_email"),
+				UNIQUE("google_profile_email")
+			);
+
+			CREATE TABLE "user_pci_details" (
+				"surrogate_id" bigint PRIMARY KEY DEFAULT nextval('ovvium_sequence'),
+				"id" uuid NOT NULL,
+				"pci_provider" varchar(100) NOT NULL,
+				"provider_reference_token" varchar(255) NOT NULL,
+				"provider_user_id" varchar(255) NOT NULL,
+				"user_id" bigint REFERENCES "user"("surrogate_id"),
+				"created" timestamp without time zone NOT NULL,
+				"updated" timestamp without time zone NOT NULL,
+				UNIQUE("id")
+			);
+
+			CREATE TABLE "invoice_date" (
+				"surrogate_id" bigint PRIMARY KEY DEFAULT nextval('ovvium_sequence'),
+				"id" uuid NOT NULL,
+				"customer_id" uuid NOT NULL REFERENCES "customer"("id"),
+				"date" date NOT NULL,
+				"status" varchar(100) NOT NULL,
+				"created" timestamp without time zone NOT NULL,
+				"updated" timestamp without time zone NOT NULL,
+				UNIQUE("id"),
+				UNIQUE("date", "customer_id")
+			);
+
+			CREATE TABLE "bill" (
+				"surrogate_id" bigint PRIMARY KEY DEFAULT nextval('ovvium_sequence'),
+				"id" uuid NOT NULL,
+				"customer_id" uuid NOT NULL REFERENCES "customer"("id"),
+				"invoice_date_id" uuid NOT NULL REFERENCES "invoice_date"("id"),
+				"bill_status" varchar(100) NOT NULL,
+				"employee_surrogate_id" bigint REFERENCES "employee"("surrogate_id"),
+				"created" timestamp without time zone NOT NULL,
+				"updated" timestamp without time zone NOT NULL,
+				UNIQUE("id")
+			);
+
+			CREATE TABLE "bill_members" (
+				"bill_surrogate_id" bigint NOT NULL REFERENCES "bill"("surrogate_id"),
+				"members_surrogate_id" bigint NOT NULL REFERENCES "user"("surrogate_id")
+			);
+
+			CREATE TABLE "category" (
+				"surrogate_id" bigint PRIMARY KEY DEFAULT nextval('ovvium_sequence'),
+				"id" uuid NOT NULL,
+				"name_default_value" text NOT NULL,
+				"name_translations" text NOT NULL,
+				"order" smallint NOT NULL,
+				"customer_surrogate_id" bigint REFERENCES "customer"("surrogate_id"),
+				"created" timestamp without time zone NOT NULL,
+				"updated" timestamp without time zone NOT NULL,
+				UNIQUE("id"),
+				UNIQUE("order","customer_surrogate_id")
+			);
+
+			CREATE TABLE "product" (
+				"surrogate_id" bigint PRIMARY KEY DEFAULT nextval('ovvium_sequence'),
+				"id" uuid NOT NULL,
+				"product_type" varchar(50) NOT NULL,
+				"name_default_value" text NOT NULL,
+				"name_translations" text NOT NULL,
+				"description_default_value" text,
+				"description_translations" text,
+				"base_price_amount" numeric(19,4) NOT NULL,
+				"base_price_currency" varchar(10) NOT NULL,
+				"order" smallint NOT NULL,
+				"type" varchar(100) NOT NULL,
+				"service_builder_location" varchar(100) NOT NULL,
+				"tax" double precision NOT NULL,
+				"allergens" varchar(500),
+				"hidden" boolean NOT NULL DEFAULT true,
+				"recommended" boolean NOT NULL DEFAULT false,
+				"days_of_week" varchar(500),
+				"start_time" time without time zone,
+				"end_time" time without time zone,
+				"cover_picture_surrogate_id" bigint REFERENCES "picture"("surrogate_id"),
+				"category_surrogate_id" bigint NOT NULL REFERENCES "category"("surrogate_id"),
+				"customer_surrogate_id" bigint NOT NULL REFERENCES "customer"("surrogate_id"),
+				"created" timestamp without time zone NOT NULL,
+				"updated" timestamp without time zone NOT NULL,
+				UNIQUE("id"),
+				UNIQUE("order","customer_surrogate_id","category_surrogate_id")
+			);
+
+			CREATE TABLE "product_group_entry" (
+				"surrogate_id" bigint PRIMARY KEY DEFAULT nextval('ovvium_sequence'),
+				"id" uuid NOT NULL,
+				"service_time" varchar(100) NOT NULL,
+				"product_group_id" bigint REFERENCES "product"("surrogate_id"),
+				"created" timestamp without time zone NOT NULL,
+				"updated" timestamp without time zone NOT NULL,
+				UNIQUE("id")
+			);
+
+			CREATE TABLE "product_group_entry_products" (
+				"product_group_entry_surrogate_id" bigint NOT NULL REFERENCES "product_group_entry"("surrogate_id"),
+				"products_surrogate_id" bigint NOT NULL REFERENCES "product"("surrogate_id")
+			);
+
+			CREATE TABLE "product_pictures" (
+				"product_surrogate_id" bigint NOT NULL REFERENCES "product"("surrogate_id"),
+				"pictures_surrogate_id" bigint NOT NULL REFERENCES "picture"("surrogate_id")
+			);
+
+			CREATE TABLE "product_option_group" (
+				"surrogate_id" bigint PRIMARY KEY DEFAULT nextval('ovvium_sequence'),
+				"id" uuid NOT NULL,
+				"title_default_value" text NOT NULL,
+				"title_translations" text NOT NULL,
+				"type" varchar(255),
+				"required" boolean NOT NULL DEFAULT false,
+				"product_id" bigint REFERENCES "product"("surrogate_id"),
+				"created" timestamp without time zone NOT NULL,
+				"updated" timestamp without time zone NOT NULL,
+				UNIQUE("id")
+			);
+
+			CREATE TABLE "product_option" (
+				"surrogate_id" bigint PRIMARY KEY DEFAULT nextval('ovvium_sequence'),
+				"id" uuid NOT NULL,
+				"title_default_value" text NOT NULL,
+				"title_translations" text NOT NULL,
+				"base_price_amount" numeric(19,4) NOT NULL,
+				"base_price_currency" varchar(10) NOT NULL,
+				"tax" double precision NOT NULL,
+				"option_group_id" bigint REFERENCES "product_option_group"("surrogate_id"),
+				"created" timestamp without time zone NOT NULL,
+				"updated" timestamp without time zone NOT NULL,
+				UNIQUE("id")
+			);
+
+			CREATE TABLE "discount" (
+				"surrogate_id" bigint PRIMARY KEY DEFAULT nextval('ovvium_sequence'),
+				"id" uuid NOT NULL,
+				"amount" numeric(19,4),
+				"currency" varchar(255),
+				"created" timestamp without time zone NOT NULL,
+				"updated" timestamp without time zone NOT NULL,
+				UNIQUE("id")
+			);
+
+			CREATE TABLE "event" (
+				"surrogate_id" bigint PRIMARY KEY DEFAULT nextval('ovvium_sequence'),
+				"id" uuid NOT NULL,
+				"content" text NOT NULL,
+				"path" varchar(500),
+				"type" varchar(500),
+				"queue_id" bigint,
+				"status" varchar(100) NOT NULL,
+				"user_id" uuid REFERENCES "user"("id"),
+				"created" timestamp without time zone NOT NULL,
+				"updated" timestamp without time zone NOT NULL,
+				UNIQUE("id")
+			);
+
+			CREATE TABLE "zone" (
+				"surrogate_id" bigint PRIMARY KEY DEFAULT nextval('ovvium_sequence'),
+				"id" uuid NOT NULL,
+				"customer_id" uuid NOT NULL REFERENCES "customer"("id"),
+				"name" varchar(255) NOT NULL,
+				"created" timestamp without time zone NOT NULL,
+				"updated" timestamp without time zone NOT NULL,
+				UNIQUE("id")
+			);
+
+			CREATE TABLE "location" (
+				"surrogate_id" bigint PRIMARY KEY DEFAULT nextval('ovvium_sequence'),
+				"id" uuid NOT NULL,
+				"customer_id" uuid NOT NULL REFERENCES "customer"("id"),
+				"description" varchar(255),
+				"tag_id" varchar(10) NOT NULL,
+				"serial_number" varchar(10) NOT NULL,
+				"position" integer NOT NULL,
+				"advance_payment" boolean NOT NULL DEFAULT false,
+				"zone_surrogate_id" bigint REFERENCES "zone"("surrogate_id"),
+				"location_customer_id" bigint REFERENCES "customer"("surrogate_id"),
+				"created" timestamp without time zone NOT NULL,
+				"updated" timestamp without time zone NOT NULL,
+				UNIQUE("id"),
+				UNIQUE("tag_id"),
+				UNIQUE("serial_number"),
+				UNIQUE("customer_id", "position", "zone_surrogate_id")
+			);
+
+			CREATE TABLE "bill_locations" (
+				"bill_surrogate_id" bigint NOT NULL REFERENCES "bill"("surrogate_id"),
+				"locations_surrogate_id" bigint NOT NULL REFERENCES "location"("surrogate_id")
+			);
+
+			CREATE TABLE "tip" (
+				"surrogate_id" bigint PRIMARY KEY DEFAULT nextval('ovvium_sequence'),
+				"id" uuid NOT NULL,
+				"amount" numeric(19,4) NOT NULL,
+				"currency" varchar(255) NOT NULL,
+				"created" timestamp without time zone NOT NULL,
+				"updated" timestamp without time zone NOT NULL,
+				UNIQUE("id")
+			);
+
+			CREATE TABLE "invoice" (
+				"surrogate_id" bigint PRIMARY KEY DEFAULT nextval('ovvium_sequence'),
+				"id" uuid NOT NULL,
+				"invoice_number" varchar(255) NOT NULL,
+				"customer_id" uuid NOT NULL REFERENCES "customer"("id"),
+				"bill_id" uuid NOT NULL REFERENCES "bill"("id"),
+				"invoice_date_surrogate_id" bigint NOT NULL REFERENCES "invoice_date"("surrogate_id"),
+				"created" timestamp without time zone NOT NULL,
+				"updated" timestamp without time zone NOT NULL,
+				UNIQUE("id"),
+				UNIQUE("invoice_number", "customer_id")
+			);
+
+			CREATE TABLE "payment_order" (
+				"surrogate_id" bigint PRIMARY KEY DEFAULT nextval('ovvium_sequence'),
+				"id" uuid NOT NULL,
+				"payment_type" varchar(100) NOT NULL,
+				"payment_order_type" varchar(31) NOT NULL,
+				"pci_transaction_id" uuid,
+				"provider" varchar(100),
+				"status" varchar(100),
+				"purchase_details_amount" numeric(19,2),
+				"purchase_details_currency" varchar(10),
+				"purchase_details_transaction_id" varchar(255),
+				"split_customer_amount" numeric(19,2),
+				"split_customer_currency" varchar(10),
+				"split_details_amount" numeric(19,2),
+				"split_details_currency" varchar(10),
+				"split_details_transaction_id" varchar(255),
+				"invoice_surrogate_id" bigint REFERENCES "invoice"("surrogate_id"),
+				"bill_surrogate_id" bigint NOT NULL REFERENCES "bill"("surrogate_id"),
+				"discount_surrogate_id" bigint REFERENCES "discount"("surrogate_id"),
+				"payer_surrogate_id" bigint REFERENCES "user"("surrogate_id"),
+				"tip_surrogate_id" bigint REFERENCES "tip"("surrogate_id"),
+				"created" timestamp without time zone NOT NULL,
+				"updated" timestamp without time zone NOT NULL,
+				UNIQUE("id"),
+				UNIQUE("pci_transaction_id")
+			);
+
+			CREATE TABLE "order" (
+				"surrogate_id" bigint PRIMARY KEY DEFAULT nextval('ovvium_sequence'),
+				"id" uuid NOT NULL,
+				"notes" varchar(200),
+				"payment_status" varchar(100) NOT NULL,
+				"issue_status" varchar(100) NOT NULL,
+				"base_price_amount" numeric(19,4) NOT NULL,
+				"base_price_currency" varchar(10) NOT NULL,
+				"tax" double precision NOT NULL,
+				"service_time" varchar(100) NOT NULL,
+				"product_surrogate_id" bigint REFERENCES "product"("surrogate_id"),
+				"user_surrogate_id" bigint REFERENCES "user"("surrogate_id"),
+				"invoice_id" bigint REFERENCES "invoice"("surrogate_id"),
+				"bill_id" bigint REFERENCES "bill"("surrogate_id"),
+				"created" timestamp without time zone NOT NULL,
+				"updated" timestamp without time zone NOT NULL,
+				"status" varchar(100) NOT NULL,
+				UNIQUE("id")
+			);
+
+			CREATE TABLE "order_group_choice" (
+				"surrogate_id" bigint PRIMARY KEY DEFAULT nextval('ovvium_sequence'),
+				"id" uuid NOT NULL,
+				"notes" varchar(200),
+				"issue_status" varchar(100) NOT NULL,
+				"service_time" varchar(100) NOT NULL,
+				"product_surrogate_id" bigint REFERENCES "product"("surrogate_id"),
+				"order_id" bigint REFERENCES "order"("surrogate_id"),
+				"created" timestamp without time zone NOT NULL,
+				"updated" timestamp without time zone NOT NULL,
+				"status" varchar(100) NOT NULL,
+				UNIQUE("id")
+			);
+
+			CREATE TABLE "selected_product_option" (
+				"surrogate_id" bigint PRIMARY KEY DEFAULT nextval('ovvium_sequence'),
+				"id" uuid NOT NULL,
+				"title_default_value" text NOT NULL,
+				"title_translations" text NOT NULL,
+				"base_price_amount" numeric(19,4) NOT NULL,
+				"base_price_currency" varchar(10) NOT NULL,
+				"tax" double precision NOT NULL,
+				"o_order_id" bigint REFERENCES "order"("surrogate_id"),
+				"created" timestamp without time zone NOT NULL,
+				"updated" timestamp without time zone NOT NULL,
+				UNIQUE("id")
+			);
+
+			CREATE TABLE "payment_order_orders" (
+				"payment_order_surrogate_id" bigint NOT NULL REFERENCES "payment_order"("surrogate_id"),
+				"orders_surrogate_id" bigint NOT NULL REFERENCES "order"("surrogate_id")
+			);
+
+			CREATE TABLE "rating" (
+				"surrogate_id" bigint PRIMARY KEY DEFAULT nextval('ovvium_sequence'),
+				"id"uuid NOT NULL,
+				"comment" varchar(500),
+				"product_id" uuid NOT NULL REFERENCES "product"("id"),
+				"amount" real NOT NULL,
+				"user_id" uuid NOT NULL REFERENCES "user"("id"),
+				"user_name" varchar(255) NOT NULL,
+				"created" timestamp without time zone NOT NULL,
+				"updated" timestamp without time zone NOT NULL,
+				UNIQUE("id"),
+				UNIQUE("product_id", "user_id")
+			);
+
+			CREATE TABLE "average_rating" (
+				"surrogate_id" bigint PRIMARY KEY DEFAULT nextval('ovvium_sequence'),
+				"id" uuid NOT NULL,
+				"amount" real NOT NULL,
+				"total_ratings" bigint NOT NULL,
+				"created" timestamp without time zone NOT NULL,
+				"updated" timestamp without time zone NOT NULL,
+				UNIQUE("id")
+			);
+
+			CREATE TABLE "api_key" (
+				"surrogate_id" bigint PRIMARY KEY DEFAULT nextval('ovvium_sequence'),
+				"id" uuid NOT NULL,
+				"key" varchar(32) NOT NULL,
+				"client" varchar(100) NOT NULL,
+				"created" timestamp without time zone NOT NULL DEFAULT CURRENT_TIMESTAMP,
+				"updated" timestamp without time zone NOT NULL DEFAULT CURRENT_TIMESTAMP,
+				UNIQUE("id"),
+				UNIQUE("key")
+			);
+
+			INSERT INTO api_key(id, key, client)
+			VALUES ('f9ca6604-a02f-43c5-a1ac-55e3524dcd29', 'v4JxpOrd92yQH5FuwNvPB2LEEucCCzyA', 'Ovvium App');
+
+			INSERT INTO api_key(id, key, client)
+			VALUES ('ba22297e-3bbb-40af-9df7-17583060878e', 'uzU5qp7y5lpSmhKOJpaZRMRYOc7DDaYO', 'Ovvium PoS');
+
+			INSERT INTO api_key(id, key, client)
+			VALUES ('88e9eb43-83a5-472a-afbb-04575ba7a818', 'TtfOke1ps4g2rmB1pYNkUcYYp2DA0LDm', 'Ovvium Admin');
+
+		</sql>
+	</changeSet>
+
+</databaseChangeLog>
+

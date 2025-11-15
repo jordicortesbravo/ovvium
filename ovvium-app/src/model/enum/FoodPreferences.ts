@@ -1,0 +1,13 @@
+export enum FoodPreferences {
+    OMNIVORE = "OMNIVORE",//
+    CELIAC = "CELIAC",//
+    VEGETARIAN = "VEGETARIAN",//
+    VEGAN = "VEGAN",//
+    RAW_VEGAN = "RAW_VEGAN",//
+    OVOLACTOVEGETARIANS = "OVOLACTOVEGETARIANS",
+    PECEVEGETARIANS = "PECEVEGETARIANS"
+}
+
+export function foodPreferencesEnumValues() {
+    return ["OMNIVORE", "CELIAC", "VEGETARIAN", "VEGAN", "RAW_VEGAN", "OVOLACTOVEGETARIANS",  "PECEVEGETARIANS"];
+}
