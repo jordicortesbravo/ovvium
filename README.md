@@ -281,7 +281,7 @@ Electron-based Point of Sale system with:
 - [App Architecture](ovvium-pos/src/app/App.tsx) - Route management and authentication flows
 - [Redux Configuration](ovvium-pos/src/app/config/ReduxConfig.ts) - State management setup
 
-> **Note:** This code represents my architectural thinking from 5-7 years ago. My current approach incorporates modern Spring Boot features, reactive programming patterns, and improved testing strategies while maintaining the same focus on clean architecture and business domain modeling.
+> **Note:** This code represents my architectural thinking from 5-7 years ago. 
 
 > **Security Note:** Configuration files, build scripts, environment variables, API keys, and deployment configurations have been omitted from this repository for security and simplification purposes. The core application logic and architecture are fully represented.
 
